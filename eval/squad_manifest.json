@@ -1,0 +1,25 @@
+{
+  "source_url": "https://raw.githubusercontent.com/rajpurkar/SQuAD-explorer/master/dataset/dev-v1.1.json",
+  "source_sha256": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+  "license": "CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)",
+  "seed": 42,
+  "collection": "squad_v11_dev500",
+  "articles": [
+    "Construction",
+    "Victoria_and_Albert_Museum",
+    "American_Broadcasting_Company",
+    "Huguenot",
+    "Geology",
+    "Victoria_(Australia)",
+    "Private_school",
+    "Chloroplast",
+    "Oxygen",
+    "Nikola_Tesla",
+    "University_of_Chicago"
+  ],
+  "n_articles": 11,
+  "n_paragraphs": 534,
+  "n_dev": 50,
+  "n_holdout": 50,
+  "n_questions_with_answer_in_other_docs": 37
+}

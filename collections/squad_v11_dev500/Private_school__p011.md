@@ -1,0 +1,9 @@
+---
+doc_id: Private_school__p011
+title: Private school
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+In Ireland, private schools (Irish: scoil phríobháideach) are unusual because a certain number of teacher's salaries are paid by the State. If the school wishes to employ extra teachers they are paid for with school fees, which tend to be relatively low in Ireland compared to the rest of the world. There is, however, a limited element of state assessment of private schools, because of the requirement that the state ensure that children receive a certain minimum education; Irish private schools must still work towards the Junior Certificate and the Leaving Certificate, for example. Many private schools in Ireland also double as boarding schools. The average fee is around €5,000 annually for most schools, but some of these schools also provide boarding and the fees may then rise up to €25,000 per year. The fee-paying schools are usually run by a religious order, i.e., the Society of Jesus or Congregation of Christian Brothers, etc.

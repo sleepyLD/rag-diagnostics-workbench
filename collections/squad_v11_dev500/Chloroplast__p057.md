@@ -1,0 +1,9 @@
+---
+doc_id: Chloroplast__p057
+title: Chloroplast
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+If angiosperm shoots are not exposed to the required light for chloroplast formation, proplastids may develop into an etioplast stage before becoming chloroplasts. An etioplast is a plastid that lacks chlorophyll, and has inner membrane invaginations that form a lattice of tubes in their stroma, called a prolamellar body. While etioplasts lack chlorophyll, they have a yellow chlorophyll precursor stocked. Within a few minutes of light exposure, the prolamellar body begins to reorganize into stacks of thylakoids, and chlorophyll starts to be produced. This process, where the etioplast becomes a chloroplast, takes several hours. Gymnosperms do not require light to form chloroplasts.

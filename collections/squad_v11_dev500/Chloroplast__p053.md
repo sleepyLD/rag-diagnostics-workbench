@@ -1,0 +1,9 @@
+---
+doc_id: Chloroplast__p053
+title: Chloroplast
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+Alternatively, glucose monomers in the chloroplast can be linked together to make starch, which accumulates into the starch grains found in the chloroplast. Under conditions such as high atmospheric CO2 concentrations, these starch grains may grow very large, distorting the grana and thylakoids. The starch granules displace the thylakoids, but leave them intact. Waterlogged roots can also cause starch buildup in the chloroplasts, possibly due to less sucrose being exported out of the chloroplast (or more accurately, the plant cell). This depletes a plant's free phosphate supply, which indirectly stimulates chloroplast starch synthesis. While linked to low photosynthesis rates, the starch grains themselves may not necessarily interfere significantly with the efficiency of photosynthesis, and might simply be a side effect of another photosynthesis-depressing factor.

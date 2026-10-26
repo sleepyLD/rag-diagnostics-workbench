@@ -1,0 +1,9 @@
+---
+doc_id: University_of_Chicago__p003
+title: University of Chicago
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+The University of Chicago was created and incorporated as a coeducational, secular institution in 1890 by the American Baptist Education Society and a donation from oil magnate and philanthropist John D. Rockefeller on land donated by Marshall Field. While the Rockefeller donation provided money for academic operations and long-term endowment, it was stipulated that such money could not be used for buildings. The original physical campus was financed by donations from wealthy Chicagoans like Silas B. Cobb who provided the funds for the campus' first building, Cobb Lecture Hall, and matched Marshall Field's pledge of $100,000. Other early benefactors included businessmen Charles L. Hutchinson (trustee, treasurer and donor of Hutchinson Commons), Martin A. Ryerson (president of the board of trustees and donor of the Ryerson Physical Laboratory) Adolphus Clay Bartlett and Leon Mandel, who funded the construction of the gymnasium and assembly hall, and George C. Walker of the Walker Museum, a relative of Cobb who encouraged his inaugural donation for facilities.

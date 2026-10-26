@@ -1,0 +1,9 @@
+---
+doc_id: Victoria_Australia__p010
+title: Victoria (Australia)
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+Victorian schools are either publicly or privately funded. Public schools, also known as state or government schools, are funded and run directly by the Victoria Department of Education . Students do not pay tuition fees, but some extra costs are levied. Private fee-paying schools include parish schools run by the Roman Catholic Church and independent schools similar to British public schools. Independent schools are usually affiliated with Protestant churches. Victoria also has several private Jewish and Islamic primary and secondary schools. Private schools also receive some public funding. All schools must comply with government-set curriculum standards. In addition, Victoria has four government selective schools, Melbourne High School for boys, MacRobertson Girls' High School for girls, the coeducational schools John Monash Science School, Nossal High School and Suzanne Cory High School, and The Victorian College of the Arts Secondary School. Students at these schools are exclusively admitted on the basis of an academic selective entry test.

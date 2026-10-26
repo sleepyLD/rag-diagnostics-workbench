@@ -1,0 +1,12 @@
+---
+doc_id: Oxygen__p006
+title: Oxygen
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+Concentrated O
+2 will allow combustion to proceed rapidly and energetically. Steel pipes and storage vessels used to store and transmit both gaseous and liquid oxygen will act as a fuel; and therefore the design and manufacture of O
+2 systems requires special training to ensure that ignition sources are minimized. The fire that killed the Apollo 1 crew in a launch pad test spread so rapidly because the capsule was pressurized with pure O
+2 but at slightly more than atmospheric pressure, instead of the 1⁄3 normal pressure that would be used in a mission.[k]

@@ -1,0 +1,9 @@
+---
+doc_id: American_Broadcasting_Company__p034
+title: American Broadcasting Company
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+On July 31, 1995, The Walt Disney Company announced an agreement to merge with Capital Cities/ABC for $19 billion. Disney shareholders approved the merger at a special conference in New York City on January 4, 1996, with the acquisition of Capital Cities/ABC being completed on February 9; following the sale, Disney renamed its new subsidiary ABC Inc. In addition to the ABC network, the Disney acquisition integrated ABC's ten owned-and-operated television and 21 radio stations; its 80% interest in ESPN, ownership interests in The History Channel, A&E Television Networks, and Lifetime Entertainment; and Capital Cities/ABC's magazine and newspaper properties into the company. As FCC ownership rules forbade the company from keeping both it and KABC-TV, Disney sold Los Angeles independent station KCAL-TV to Young Broadcasting for $387 million. On April 4, Disney sold the four newspapers that ABC had controlled under Capital Cities to Knight Ridder for $1.65 billion. Following the merger, Thomas S. Murphy left ABC with Robert Iger taking his place as president and CEO. Around the time of the merger, Disney's television production units had already produced series for the network such as Home Improvement and Boy Meets World, while the deal also allowed ABC access to Disney's children's programming library for its Saturday morning block. In 1998, ABC premiered the Aaron Sorkin-created sitcom Sports Night, centering on the travails of the staff of a SportsCenter-style sports news program; despite earning critical praise and multiple Emmy Awards, the series was cancelled in 2000 after two seasons.

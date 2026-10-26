@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# 向量索引：由 collections/ + Embedding 模型重建（03 或 app.py 第一次執行時自動建立）
+index/
+
+# HotpotQA 原始檔 27 MB、轉出的知識庫約 4,000 個檔案：都可重建
+#   下載：見 data/README.md；轉換：python -m tools.datasets.prepare_hotpotqa ...
+data/raw/hotpotqa/
+collections/hotpot_dev400/
+docs/
+# results/ 要提交：README 和報告引用的數字都來自這裡，總共約 5 MB
+
+# NeoQA：CC BY-ND 4.0，作者要求不要公開解密後的明文 → 只提交下載腳本
+data/raw/neoqa/
+.venv-neoqa/

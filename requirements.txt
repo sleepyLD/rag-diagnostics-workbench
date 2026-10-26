@@ -1,0 +1,12 @@
+# Stage 1 notebook + ingestion tools. After a successful install, freeze exact versions:
+#   .\.venv\Scripts\python.exe -m pip freeze > requirements.lock.txt
+sentence-transformers>=3.0
+numpy>=1.26
+pandas>=2.1
+requests>=2.31
+ipykernel>=6.29
+beautifulsoup4>=4.12
+pytest>=8
+pyarrow>=14          # 讀 Hugging Face 的 parquet 資料檔
+rank-bm25>=0.2.2     # 混合檢索的 BM25
+streamlit>=1.30,<1.42  # 1.42 之後需要 protobuf 6+ 和 starlette，會升級全域的共用套件

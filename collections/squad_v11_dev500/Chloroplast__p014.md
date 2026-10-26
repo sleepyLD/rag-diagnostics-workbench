@@ -1,0 +1,9 @@
+---
+doc_id: Chloroplast__p014
+title: Chloroplast
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+The most common dinophyte chloroplast is the peridinin-type chloroplast, characterized by the carotenoid pigment peridinin in their chloroplasts, along with chlorophyll a and chlorophyll c2. Peridinin is not found in any other group of chloroplasts. The peridinin chloroplast is bounded by three membranes (occasionally two), having lost the red algal endosymbiont's original cell membrane. The outermost membrane is not connected to the endoplasmic reticulum. They contain a pyrenoid, and have triplet-stacked thylakoids. Starch is found outside the chloroplast An important feature of these chloroplasts is that their chloroplast DNA is highly reduced and fragmented into many small circles. Most of the genome has migrated to the nucleus, and only critical photosynthesis-related genes remain in the chloroplast.

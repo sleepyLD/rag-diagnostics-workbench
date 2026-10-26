@@ -1,0 +1,8 @@
+{
+  "source_sha256": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+  "seed": 31,
+  "n_dev": 50,
+  "n_holdout": 50,
+  "kept_original": 15,
+  "dropped_answer_in_A": 47
+}

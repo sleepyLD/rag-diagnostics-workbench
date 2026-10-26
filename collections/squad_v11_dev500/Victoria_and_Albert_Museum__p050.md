@@ -1,0 +1,9 @@
+---
+doc_id: Victoria_and_Albert_Museum__p050
+title: Victoria and Albert Museum
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+The collection of Italian, Medieval, Renaissance, Baroque and Neoclassical sculpture (both original and in cast form) is unequalled outside of Italy. It includes Canova's The Three Graces, which the museum jointly owns with National Galleries of Scotland. Italian sculptors whose work is held by the museum include: Bartolomeo Bon, Bartolomeo Bellano, Luca della Robbia, Giovanni Pisano, Donatello, Agostino di Duccio, Andrea Riccio, Antonio Rossellino, Andrea del Verrocchio, Antonio Lombardo, Pier Jacopo Alari Bonacolsi, Andrea della Robbia, Michelozzo di Bartolomeo, Michelangelo (represented by a freehand wax model and casts of his most famous sculptures), Jacopo Sansovino, Alessandro Algardi, Antonio Calcagni, Benvenuto Cellini (Medusa's head dated c. 1547), Agostino Busti, Bartolomeo Ammannati, Giacomo della Porta, Giambologna (Samson Slaying a Philistine (Giambologna) c. 1562, his finest work outside Italy), Bernini (Neptune and Triton c. 1622–3), Giovanni Battista Foggini, Vincenzo Foggini (Samson and the Philistines), Massimiliano Soldani Benzi, Antonio Corradini, Andrea Brustolon, Giovanni Battista Piranesi, Innocenzo Spinazzi, Canova, Carlo Marochetti and Raffaelle Monti. An unusual sculpture is the ancient Roman statue of Narcissus restored by Valerio Cioli c1564 with plaster. There are several small scale bronzes by Donatello, Alessandro Vittoria, Tiziano Aspetti and Francesco Fanelli in the collection. The largest item from Italy is the Chancel Chapel from Santa Chiara Florence dated 1493–1500, designed by Giuliano da Sangallo it is 11.1 metres in height by 5.4 metres square, it includes a grand sculpted tabernacle by Antonio Rossellino and coloured terracotta decoration.

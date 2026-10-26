@@ -1,0 +1,9 @@
+---
+doc_id: Super_Bowl_50__p033
+title: Super Bowl 50
+collection: squad_v11_b5
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+On December 28, 2015, ESPN Deportes announced that they had reached an agreement with CBS and the NFL to be the exclusive Spanish-language broadcaster of the game, marking the third dedicated Spanish-language broadcast of the Super Bowl. Unlike NBC and Fox, CBS does not have a Spanish-language outlet of its own that could broadcast the game (though per league policy, a separate Spanish play-by-play call was carried on CBS's second audio program channel for over-the-air viewers). The game was called by ESPN Deportes' Monday Night Football commentary crew of Alvaro Martin and Raul Allegre, and sideline reporter John Sutcliffe. ESPN Deportes broadcast pre-game and post-game coverage, while Martin, Allegre, and Sutcliffe contributed English-language reports for ESPN's SportsCenter and Mike & Mike.

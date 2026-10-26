@@ -1,0 +1,9 @@
+---
+doc_id: Construction__p020
+title: Construction
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+In 2010 a salary survey revealed the differences in remuneration between different roles, sectors and locations in the construction and built environment industry. The results showed that areas of particularly strong growth in the construction industry, such as the Middle East, yield higher average salaries than in the UK for example. The average earning for a professional in the construction industry in the Middle East, across all sectors, job types and levels of experience, is £42,090, compared to £26,719 in the UK. This trend is not necessarily due to the fact that more affluent roles are available, however, as architects with 14 or more years experience working in the Middle East earn on average £43,389 per annum, compared to £40,000 in the UK. Some construction workers in the US/Canada have made more than $100,000 annually, depending on their trade.

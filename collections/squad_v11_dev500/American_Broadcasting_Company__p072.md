@@ -1,0 +1,9 @@
+---
+doc_id: American_Broadcasting_Company__p072
+title: American Broadcasting Company
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+ABC dominated the American television landscape during the 1970s and early 1980s (by 1980, the three major networks represented 90% of all prime-time television viewership in the U.S.). Several flagship series debuted on the network during this time including Dynasty, an opulent drama from Aaron Spelling that became a hit when it premiered as a midseason series in 1981, five months before Spelling's other ABC hit Charlie's Angels ended its run. The network was also propelled during the early 1980s by the continued successes of Happy Days, Three's Company, Laverne & Shirley and Fantasy Island, and gained new hits in Too Close for Comfort, Soap spinoff Benson and Happy Days spinoff Mork & Mindy. In 1981, ABC (through its ABC Video Services division) launched the Alpha Repertory Television Service (ARTS), a cable channel operated as a joint venture with the Hearst Corporation offering cultural and arts programming, which aired as a nighttime service over the channel space of Nickelodeon.

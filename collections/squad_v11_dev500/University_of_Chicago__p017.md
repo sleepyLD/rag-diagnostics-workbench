@@ -1,0 +1,9 @@
+---
+doc_id: University_of_Chicago__p017
+title: University of Chicago
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+The University of Chicago Library system encompasses six libraries that contain a total of 9.8 million volumes, the 11th most among library systems in the United States. The university's main library is the Regenstein Library, which contains one of the largest collections of print volumes in the United States. The Joe and Rika Mansueto Library, built in 2011, houses a large study space and an automatic book storage and retrieval system. The John Crerar Library contains more than 1.3 million volumes in the biological, medical and physical sciences and collections in general science and the philosophy and history of science, medicine, and technology. The university also operates a number of special libraries, including the D'Angelo Law Library, the Social Service Administration Library, and the Eckhart Library for mathematics and computer science, which closed temporarily for renovation on July 8, 2013. Harper Memorial Library no longer contains any volumes; however it is, in addition to the Regenstein Library, a 24-hour study space on campus.

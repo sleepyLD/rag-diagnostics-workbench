@@ -1,0 +1,9 @@
+---
+doc_id: American_Broadcasting_Company__p073
+title: American Broadcasting Company
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+In 1983, ABC sold KXYZ to the Infinity Broadcasting Corporation. On January 4, 1984, The New York Times reported that ABC, through its subsidiary ABC Video Enterprises, had exercised its option to purchase up to 15% (or between $25 million and $30 million) of Getty Oil's shares in ESPN, which would allow it to expand its shares at a later date. In June 1984, ABC's executive committee approved the company's interest acquisition in ESPN, and ABC arranged with Getty Oil to obtain an 80% stake in the channel, while selling the remaining 20% to Nabisco. That year, ABC and Hearst reached an agreement with RCA to merge ARTS and competing arts service, The Entertainment Channel, into a single cable channel called Arts & Entertainment Television (A&E); the new channel subsequently leased a separate satellite transponder, ending its sharing agreement with Nickelodeon to become a 24-hour service. Meanwhile, ABC withdrew from the theme park business for good when it sold the Silver Springs Nature Theme Park.

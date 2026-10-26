@@ -1,0 +1,9 @@
+---
+doc_id: Geology__p012
+title: Geology
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+The addition of new rock units, both depositionally and intrusively, often occurs during deformation. Faulting and other deformational processes result in the creation of topographic gradients, causing material on the rock unit that is increasing in elevation to be eroded by hillslopes and channels. These sediments are deposited on the rock unit that is going down. Continual motion along the fault maintains the topographic gradient in spite of the movement of sediment, and continues to create accommodation space for the material to deposit. Deformational events are often also associated with volcanism and igneous activity. Volcanic ashes and lavas accumulate on the surface, and igneous intrusions enter from below. Dikes, long, planar igneous intrusions, enter along cracks, and therefore often form in large numbers in areas that are being actively deformed. This can result in the emplacement of dike swarms, such as those that are observable across the Canadian shield, or rings of dikes around the lava tube of a volcano.

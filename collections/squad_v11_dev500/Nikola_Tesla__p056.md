@@ -1,0 +1,9 @@
+---
+doc_id: Nikola_Tesla__p056
+title: Nikola Tesla
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+In 1928, Tesla received his last patent, U.S. Patent 1,655,114, for a biplane capable of taking off vertically (VTOL aircraft) and then be "gradually tilted through manipulation of the elevator devices" in flight until it was flying like a conventional plane. Tesla thought the plane would sell for less than $1,000.:251 Although the aircraft was probably impractical, it may be the earliest known design for what became the tiltrotor/tilt-wing concept as well as the earliest proposal for the use of turbine engines in rotor aircraft.[improper synthesis?]

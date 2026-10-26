@@ -1,0 +1,39 @@
+{
+  "source_sha256": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+  "license": "CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)",
+  "seed": 7,
+  "collection": "squad_v11_b5",
+  "articles": [
+    "Super_Bowl_50",
+    "Prime_number",
+    "Genghis_Khan",
+    "Black_Death",
+    "Packet_switching"
+  ],
+  "n_paragraphs": 185,
+  "n_questions": 15,
+  "excluded_collection": "squad_v11_dev500",
+  "dropped_because_answer_in_other_collection": [
+    {
+      "qid": "56be5333acb8001400a5030b",
+      "question": "What was the average cost for a 30 second commercial during Super Bowl 50?",
+      "answer_found_in_other": [
+        "$5 million"
+      ]
+    },
+    {
+      "qid": "56d602631c85041400946ed8",
+      "question": "Who broadcast the Super Bowl on TV?",
+      "answer_found_in_other": [
+        "CBS"
+      ]
+    },
+    {
+      "qid": "572995d46aef051400154fe8",
+      "question": "Assuming p is a prime other than 2 or 5, then, according to Fermat's theorem, what type of decimal will 1/p always be?",
+      "answer_found_in_other": [
+        "recurring"
+      ]
+    }
+  ]
+}

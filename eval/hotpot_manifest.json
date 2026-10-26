@@ -1,0 +1,18 @@
+{
+  "source_sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+  "license": "CC BY-SA 4.0 (HotpotQA, Yang et al. 2018)",
+  "seed": 11,
+  "collection": "hotpot_dev400",
+  "n_paragraphs": 3954,
+  "n_dev": 300,
+  "n_holdout": 100,
+  "types": {
+    "bridge": 320,
+    "comparison": 80
+  },
+  "levels": {
+    "hard": 400
+  },
+  "yes_no_answers": 22,
+  "same_title_different_text": 0
+}

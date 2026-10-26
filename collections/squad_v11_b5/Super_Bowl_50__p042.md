@@ -1,0 +1,9 @@
+---
+doc_id: Super_Bowl_50__p042
+title: Super Bowl 50
+collection: squad_v11_b5
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+In honor of the 50th Super Bowl, the pregame ceremony featured the on-field introduction of 39 of the 43 previous Super Bowl Most Valuable Players. Bart Starr (MVP of Super Bowls I and II) and Chuck Howley (MVP of Super Bowl V) appeared via video, while Peyton Manning (MVP of Super Bowl XLI and current Broncos quarterback) was shown in the locker room preparing for the game. No plans were announced regarding the recognition of Harvey Martin, co-MVP of Super Bowl XII, who died in 2001.

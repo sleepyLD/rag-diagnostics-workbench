@@ -1,0 +1,9 @@
+---
+doc_id: Victoria_and_Albert_Museum__p044
+title: Victoria and Albert Museum
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+The Musical Instruments gallery closed 25 February 2010, a decision which was highly controversial. An online petition of over 5,100 names on the Parliamentary website led to Chris Smith asking Parliament about the future of the collection. The answer, from Bryan Davies was that the museum intended to preserve and care for the collection and keep it available to the public, with items being redistributed to the British Galleries, the Medieval & Renaissance Galleries, and the planned new galleries for Furniture and Europe 1600–1800, and that the Horniman Museum and other institutions were possible candidates for loans of material to ensure that the instruments remained publicly viewable. The Horniman went on to host a joint exhibition with the V&A of musical instruments, and has the loan of 35 instruments from the museum.

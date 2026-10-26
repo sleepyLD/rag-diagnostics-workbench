@@ -1,0 +1,9 @@
+---
+doc_id: Huguenot__p031
+title: Huguenot
+collection: squad_v11_dev500
+source: SQuAD v1.1 dev
+license: CC BY-SA 4.0 (SQuAD, Rajpurkar et al. 2016)
+---
+
+Following the French Crown's revocation of the Edict of Nantes, many Huguenots settled in Ireland in the late 17th and early 18th centuries, encouraged by an act of parliament for Protestants' settling in Ireland. Huguenot regiments fought for William of Orange in the Williamite war in Ireland, for which they were rewarded with land grants and titles, many settling in Dublin. Significant Huguenot settlements were in Dublin, Cork, Portarlington, Lisburn, Waterford and Youghal. Smaller settlements, which included Killeshandra in County Cavan, contributed to the expansion of flax cultivation and the growth of the Irish linen industry.

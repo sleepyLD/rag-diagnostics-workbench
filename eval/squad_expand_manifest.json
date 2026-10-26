@@ -1,0 +1,9 @@
+{
+  "source_sha256": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+  "seed": 2026,
+  "collection": "squad_v11_dev500",
+  "n_dev": 300,
+  "n_holdout": 100,
+  "kept_original_dev": 50,
+  "kept_original_holdout": 50
+}
