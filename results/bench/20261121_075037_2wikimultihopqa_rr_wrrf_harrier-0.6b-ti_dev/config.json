@@ -1,0 +1,47 @@
+{
+ "run_id": "20261121_075037_2wikimultihopqa_rr_wrrf_harrier-0.6b-ti_dev",
+ "dataset": "2wikimultihopqa",
+ "split": "dev",
+ "method": {
+  "name": "rr_wrrf_harrier-0.6b-ti",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_harrier-0.6b-ti_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "harrier-0.6b-ti",
+     "type": "dense",
+     "model": "microsoft/harrier-oss-v1-0.6b",
+     "use_model_prompts": true,
+     "batch_size": 32,
+     "task_instruct": true
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "3b6e79c4c2",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 40002,
+ "corpus_sha256": "5873951f6f91ec6d1b60a46042f150e0fbdc76d5cef39047282c9a13ef3a58bd",
+ "queries_sha256": "893242a9454c755a644181318130f1d029551002afe0a38be15d7f9883e48d14",
+ "index_key": "2wikimultihopqa__microsoft-harrier-oss-v1-0.6b__bcf41fff9675+2wikimultihopqa__bm25+rerank:BAAI/bge-reranker-v2-m3@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

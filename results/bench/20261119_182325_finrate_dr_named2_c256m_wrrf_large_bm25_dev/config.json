@@ -1,0 +1,37 @@
+{
+ "run_id": "20261119_182325_finrate_dr_named2_c256m_wrrf_large_bm25_dev",
+ "dataset": "finrate_dr_named2_c256m",
+ "split": "dev",
+ "method": {
+  "name": "wrrf_large_bm25",
+  "type": "fusion",
+  "mode": "rrf",
+  "rrf_k": 60,
+  "weights": [
+   1.0,
+   0.5
+  ],
+  "components": [
+   {
+    "name": "bge-large",
+    "type": "dense",
+    "model": "BAAI/bge-large-en-v1.5",
+    "query_prefix": "Represent this sentence for searching relevant passages: "
+   },
+   {
+    "name": "bm25",
+    "type": "bm25"
+   }
+  ]
+ },
+ "method_hash": "adf151c187",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 216480,
+ "corpus_sha256": "738fed64a336f975d8a863d6abe9a404568ded4d303b7ef869e3e0716a3a1f02",
+ "queries_sha256": "57e323207131ef54c1dbb90a335823c9e7c1d2d9f0542a06f223b94accc2681d",
+ "index_key": "finrate_dr_named2_c256m__BAAI-bge-large-en-v1.5__d61e671eef04+finrate_dr_named2_c256m__bm25",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 50 questions at batch=1, top_k=100"
+}

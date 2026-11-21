@@ -1,0 +1,121 @@
+{
+ "n": 500,
+ "overall": {
+  "recall@1": 0.1025,
+  "recall@3": 0.2336,
+  "recall@5": 0.3064,
+  "recall@10": 0.4207,
+  "recall@20": 0.5094,
+  "recall@100": 0.6893,
+  "all_gold_hit@3": 0.172,
+  "all_gold_hit@5": 0.264,
+  "all_gold_hit@10": 0.404,
+  "all_gold_hit@20": 0.524,
+  "mrr": 0.4524,
+  "ndcg@10": 0.3388
+ },
+ "by_type": {
+  "cross_company": {
+   "n": 258,
+   "recall@1": 0.0472,
+   "recall@3": 0.0881,
+   "recall@5": 0.1221,
+   "recall@10": 0.2106,
+   "recall@20": 0.2895,
+   "recall@100": 0.5017,
+   "all_gold_hit@3": 0.0194,
+   "all_gold_hit@5": 0.0233,
+   "all_gold_hit@10": 0.1357,
+   "all_gold_hit@20": 0.2519,
+   "mrr": 0.347,
+   "ndcg@10": 0.1807
+  },
+  "cross_year": {
+   "n": 242,
+   "recall@1": 0.1615,
+   "recall@3": 0.3886,
+   "recall@5": 0.5028,
+   "recall@10": 0.6446,
+   "recall@20": 0.7438,
+   "recall@100": 0.8893,
+   "all_gold_hit@3": 0.3347,
+   "all_gold_hit@5": 0.5207,
+   "all_gold_hit@10": 0.6901,
+   "all_gold_hit@20": 0.814,
+   "mrr": 0.5647,
+   "ndcg@10": 0.5073
+  }
+ },
+ "by_hops": {
+  "2": {
+   "n": 494,
+   "recall@1": 0.1031,
+   "recall@3": 0.233,
+   "recall@5": 0.3041,
+   "recall@10": 0.4173,
+   "recall@20": 0.5051,
+   "recall@100": 0.6863,
+   "all_gold_hit@3": 0.1741,
+   "all_gold_hit@5": 0.2632,
+   "all_gold_hit@10": 0.4008,
+   "all_gold_hit@20": 0.5182,
+   "mrr": 0.4509,
+   "ndcg@10": 0.3362
+  },
+  "3": {
+   "n": 5,
+   "recall@1": 0.04,
+   "recall@3": 0.2533,
+   "recall@5": 0.5067,
+   "recall@10": 0.64,
+   "recall@20": 0.84,
+   "recall@100": 0.92,
+   "all_gold_hit@3": 0.0,
+   "all_gold_hit@5": 0.4,
+   "all_gold_hit@10": 0.6,
+   "all_gold_hit@20": 1.0,
+   "mrr": 0.4833,
+   "ndcg@10": 0.4786
+  },
+  "4": {
+   "n": 1,
+   "recall@1": 0.1429,
+   "recall@3": 0.4286,
+   "recall@5": 0.4286,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@100": 1.0,
+   "all_gold_hit@3": 0.0,
+   "all_gold_hit@5": 0.0,
+   "all_gold_hit@10": 1.0,
+   "all_gold_hit@20": 1.0,
+   "mrr": 1.0,
+   "ndcg@10": 0.9415
+  }
+ },
+ "latency": {
+  "n": 50,
+  "device": "cuda",
+  "total_ms_p50": 24.194,
+  "total_ms_p95": 40.056,
+  "total_ms_mean": 27.542,
+  "encode_ms_p50": 14.853,
+  "search_ms_p50": 7.767,
+  "post_ms_p50": 0.602,
+  "encode_ms_p95": 27.817,
+  "search_ms_p95": 11.032,
+  "post_ms_p95": 1.052,
+  "batch_qps": 106.2,
+  "resumed_questions": 0
+ },
+ "index": {
+  "build_s": 2021.74,
+  "index_bytes": 1081935308,
+  "cached": false,
+  "n_docs": 216480,
+  "build_wall_s": 2033.41,
+  "index_mb": 1031.81,
+  "vram_build_peak_mb": 1494.8,
+  "vram_search_peak_mb": 1626.7
+ }
+}

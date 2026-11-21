@@ -1,0 +1,45 @@
+{
+ "run_id": "20261119_013955_fiqa_rr-m3dom_wrrfdom_dev",
+ "dataset": "fiqa",
+ "split": "dev",
+ "method": {
+  "name": "rr-m3dom_wrrfdom",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_basedom_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "bge-base-dom",
+     "type": "dense",
+     "model": "models/bge-base-dom",
+     "query_prefix": "Represent this sentence for searching relevant passages: "
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "models/rr-m3-dom",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "fa32a62c99",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 57600,
+ "corpus_sha256": "e8f998a5afb42f2a07807b1b4ad5d8497ef084465424cc21a7013e579bb35267",
+ "queries_sha256": "2b2d50cc6b0c276b6213cfc1953228db28dc68d0530dd5d15dedbe62cdcd3d24",
+ "index_key": "fiqa__models-bge-base-dom__34044ab82dc0+fiqa__bm25+rerank:models/rr-m3-dom@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

@@ -1,0 +1,22 @@
+{
+ "run_id": "20261121_043459_hotpotqa_qwen3-emb-4b_dev",
+ "dataset": "hotpotqa",
+ "split": "dev",
+ "method": {
+  "name": "qwen3-emb-4b",
+  "type": "dense",
+  "model": "Qwen/Qwen3-Embedding-4B",
+  "use_model_prompts": true,
+  "batch_size": 8
+ },
+ "method_hash": "6f32ee0297",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 40003,
+ "corpus_sha256": "2b14e0396a91e5abd7ba5185f50289528d458666196a6c1c2b5ee63e6f8f3b22",
+ "queries_sha256": "d275efa438b9d64a84532630563a0ef2fc1d2f5e5898f484d7ea29b47288500d",
+ "index_key": "hotpotqa__Qwen-Qwen3-Embedding-4B__a330e87602bb",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

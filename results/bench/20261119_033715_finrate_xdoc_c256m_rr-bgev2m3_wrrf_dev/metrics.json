@@ -1,0 +1,123 @@
+{
+ "n": 500,
+ "overall": {
+  "recall@1": 0.0772,
+  "recall@3": 0.1769,
+  "recall@5": 0.2314,
+  "recall@10": 0.3369,
+  "recall@20": 0.4181,
+  "recall@100": 0.5555,
+  "all_gold_hit@3": 0.094,
+  "all_gold_hit@5": 0.172,
+  "all_gold_hit@10": 0.318,
+  "all_gold_hit@20": 0.452,
+  "mrr": 0.3712,
+  "ndcg@10": 0.2675
+ },
+ "by_type": {
+  "cross_company": {
+   "n": 258,
+   "recall@1": 0.0214,
+   "recall@3": 0.0757,
+   "recall@5": 0.0995,
+   "recall@10": 0.1641,
+   "recall@20": 0.2249,
+   "recall@100": 0.3737,
+   "all_gold_hit@3": 0.0194,
+   "all_gold_hit@5": 0.0465,
+   "all_gold_hit@10": 0.1279,
+   "all_gold_hit@20": 0.2403,
+   "mrr": 0.2736,
+   "ndcg@10": 0.1387
+  },
+  "cross_year": {
+   "n": 242,
+   "recall@1": 0.1366,
+   "recall@3": 0.2849,
+   "recall@5": 0.3721,
+   "recall@10": 0.521,
+   "recall@20": 0.6242,
+   "recall@100": 0.7493,
+   "all_gold_hit@3": 0.1736,
+   "all_gold_hit@5": 0.3058,
+   "all_gold_hit@10": 0.5207,
+   "all_gold_hit@20": 0.6777,
+   "mrr": 0.4752,
+   "ndcg@10": 0.4049
+  }
+ },
+ "by_hops": {
+  "2": {
+   "n": 494,
+   "recall@1": 0.0777,
+   "recall@3": 0.1766,
+   "recall@5": 0.2299,
+   "recall@10": 0.3349,
+   "recall@20": 0.4147,
+   "recall@100": 0.5516,
+   "all_gold_hit@3": 0.0951,
+   "all_gold_hit@5": 0.1741,
+   "all_gold_hit@10": 0.3198,
+   "all_gold_hit@20": 0.4494,
+   "mrr": 0.3705,
+   "ndcg@10": 0.2662
+  },
+  "3": {
+   "n": 5,
+   "recall@1": 0.04,
+   "recall@3": 0.2133,
+   "recall@5": 0.3467,
+   "recall@10": 0.4533,
+   "recall@20": 0.64,
+   "recall@100": 0.8533,
+   "all_gold_hit@3": 0.0,
+   "all_gold_hit@5": 0.0,
+   "all_gold_hit@10": 0.0,
+   "all_gold_hit@20": 0.6,
+   "mrr": 0.45,
+   "ndcg@10": 0.3459
+  },
+  "4": {
+   "n": 1,
+   "recall@1": 0.0,
+   "recall@3": 0.1429,
+   "recall@5": 0.4286,
+   "recall@10": 0.7143,
+   "recall@20": 1.0,
+   "recall@100": 1.0,
+   "all_gold_hit@3": 0.0,
+   "all_gold_hit@5": 0.0,
+   "all_gold_hit@10": 1.0,
+   "all_gold_hit@20": 1.0,
+   "mrr": 0.3333,
+   "ndcg@10": 0.5517
+  }
+ },
+ "latency": {
+  "n": 200,
+  "device": "cuda",
+  "total_ms_p50": 1094.606,
+  "total_ms_p95": 1140.189,
+  "total_ms_mean": 1095.821,
+  "encode_ms_p50": 26.606,
+  "search_ms_p50": 10.404,
+  "post_ms_p50": 1057.767,
+  "encode_ms_p95": 31.159,
+  "search_ms_p95": 12.963,
+  "post_ms_p95": 1103.463,
+  "batch_qps": 1.0,
+  "resumed_questions": 0
+ },
+ "index": {
+  "build_s": 2309.2999999999997,
+  "index_bytes": 1056340800,
+  "cached": false,
+  "n_docs": 216480,
+  "rerank_model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "build_wall_s": 40.4,
+  "index_mb": 1007.41,
+  "vram_build_peak_mb": 4137.9,
+  "vram_search_peak_mb": 3298.8
+ }
+}

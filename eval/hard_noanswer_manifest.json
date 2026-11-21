@@ -1,0 +1,64 @@
+{
+  "seed": 41,
+  "n_per_source": 50,
+  "sources": [
+    {
+      "file": "squad_dev300.jsonl",
+      "pool": 150,
+      "eligible": 92,
+      "picked": 50,
+      "skipped": {
+        "answer string elsewhere in collection": 58
+      },
+      "picked_types": {
+        "single": 50
+      }
+    },
+    {
+      "file": "hotpot_dev.jsonl",
+      "pool": 150,
+      "eligible": 74,
+      "picked": 50,
+      "skipped": {
+        "bridge: answer in both/neither gold": 25,
+        "comparison: 'both ...? no'": 5,
+        "answer string elsewhere in collection": 23,
+        "comparison: entity answer": 23
+      },
+      "picked_types": {
+        "bridge": 45,
+        "comparison": 5
+      }
+    },
+    {
+      "file": "squad_holdout100.jsonl",
+      "pool": 100,
+      "eligible": 58,
+      "picked": 50,
+      "skipped": {
+        "answer string elsewhere in collection": 42
+      },
+      "picked_types": {
+        "single": 50
+      }
+    },
+    {
+      "file": "hotpot_holdout.jsonl",
+      "pool": 100,
+      "eligible": 41,
+      "picked": 41,
+      "skipped": {
+        "answer string elsewhere in collection": 18,
+        "comparison: entity answer": 17,
+        "bridge: answer in both/neither gold": 23,
+        "comparison: 'both ...? no'": 1
+      },
+      "picked_types": {
+        "bridge": 35,
+        "comparison": 6
+      }
+    }
+  ],
+  "hard_noanswer_dev.jsonl": 100,
+  "hard_noanswer_holdout.jsonl": 91
+}

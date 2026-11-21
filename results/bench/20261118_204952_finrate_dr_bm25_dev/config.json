@@ -1,0 +1,19 @@
+{
+ "run_id": "20261118_204952_finrate_dr_bm25_dev",
+ "dataset": "finrate_dr",
+ "split": "dev",
+ "method": {
+  "name": "bm25",
+  "type": "bm25"
+ },
+ "method_hash": "24c1654410",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 15311,
+ "corpus_sha256": "5af683eab0ddb878f417446249569f22d16bf5c6528598a4d3a8e2c96ca5ff46",
+ "queries_sha256": "57e323207131ef54c1dbb90a335823c9e7c1d2d9f0542a06f223b94accc2681d",
+ "index_key": "finrate_dr__bm25",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

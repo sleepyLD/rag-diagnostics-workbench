@@ -1,0 +1,10 @@
+{
+ "run": "20261121_005141_multihop_rag_c256m_rr-bgev2m3_wrrf_null",
+ "mode": "rag",
+ "k": 5,
+ "model": "qwen3:4b-instruct",
+ "n": 301,
+ "accuracy": 0.0,
+ "acc_when_gold_in_context": 0.0,
+ "minutes": 13.5
+}

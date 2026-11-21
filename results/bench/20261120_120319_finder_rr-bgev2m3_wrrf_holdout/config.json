@@ -1,0 +1,45 @@
+{
+ "run_id": "20261120_120319_finder_rr-bgev2m3_wrrf_holdout",
+ "dataset": "finder",
+ "split": "holdout",
+ "method": {
+  "name": "rr-bgev2m3_wrrf",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_large_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "bge-large",
+     "type": "dense",
+     "model": "BAAI/bge-large-en-v1.5",
+     "query_prefix": "Represent this sentence for searching relevant passages: "
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "ffb817957e",
+ "top_k": 100,
+ "n_queries": 300,
+ "n_corpus": 5832,
+ "corpus_sha256": "8acb73aa2e631dbd069de340f00909d580243fea3bc03309457775746cb35468",
+ "queries_sha256": "b36da24c8d4d80207081c5fa234b51aac5fb5e4601b1576af8c36a50bae1aa44",
+ "index_key": "finder__BAAI-bge-large-en-v1.5__3aa3a6ee8c0c+finder__bm25+rerank:BAAI/bge-reranker-v2-m3@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 20 questions at batch=1, top_k=100"
+}

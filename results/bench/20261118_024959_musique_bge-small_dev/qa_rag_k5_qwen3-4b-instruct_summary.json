@@ -1,0 +1,10 @@
+{
+ "run": "20261118_024959_musique_bge-small_dev",
+ "mode": "rag",
+ "k": 5,
+ "model": "qwen3:4b-instruct",
+ "n": 200,
+ "accuracy": 0.07,
+ "acc_when_gold_in_context": 0.3462,
+ "minutes": 8.1
+}

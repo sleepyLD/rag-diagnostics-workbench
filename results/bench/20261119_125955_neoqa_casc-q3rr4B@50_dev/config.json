@@ -1,0 +1,55 @@
+{
+ "run_id": "20261119_125955_neoqa_casc-q3rr4B@50_dev",
+ "dataset": "neoqa",
+ "split": "dev",
+ "method": {
+  "name": "casc-q3rr4B@50",
+  "type": "rerank",
+  "first": {
+   "name": "rr-bgev2m3_wrrf",
+   "type": "rerank",
+   "first": {
+    "name": "wrrf_large_bm25",
+    "type": "fusion",
+    "mode": "rrf",
+    "rrf_k": 60,
+    "weights": [
+     1.0,
+     0.5
+    ],
+    "components": [
+     {
+      "name": "bge-large",
+      "type": "dense",
+      "model": "BAAI/bge-large-en-v1.5",
+      "query_prefix": "Represent this sentence for searching relevant passages: "
+     },
+     {
+      "name": "bm25",
+      "type": "bm25"
+     }
+    ]
+   },
+   "model": "BAAI/bge-reranker-v2-m3",
+   "depth": 100,
+   "batch_size": 64,
+   "max_length": 512
+  },
+  "model": "Qwen/Qwen3-Reranker-4B",
+  "scorer_type": "qwen3",
+  "instruction": "Given a question that may need several documents, judge whether this document provides evidence needed to answer it",
+  "depth": 50,
+  "max_length": 1024,
+  "batch_size": 4
+ },
+ "method_hash": "8e0a50f7d3",
+ "top_k": 100,
+ "n_queries": 150,
+ "n_corpus": 1800,
+ "corpus_sha256": "7545e5e5d7106614510587898011720cbc93a99296a97b45645d5854d8e2c2a4",
+ "queries_sha256": "59d3ce5c0270411cff9d278d1123fcc48e95bc2bb7fe0a413a3200cc2b79f122",
+ "index_key": "neoqa__BAAI-bge-large-en-v1.5__07b35f04fe3a+neoqa__bm25+rerank:BAAI/bge-reranker-v2-m3@100+rerank:Qwen/Qwen3-Reranker-4B@50",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 30 questions at batch=1, top_k=100"
+}

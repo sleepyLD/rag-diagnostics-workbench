@@ -1,0 +1,29 @@
+{
+ "run_id": "20261118_092041_multihop_rag_mhbeam3_small-mh2_dev",
+ "dataset": "multihop_rag",
+ "split": "dev",
+ "method": {
+  "name": "mhbeam3_small-mh2",
+  "type": "mhbeam",
+  "base": {
+   "name": "bge-small-mh2",
+   "type": "dense",
+   "model": "models/bge-small-mh2",
+   "query_prefix": "Represent this sentence for searching relevant passages: "
+  },
+  "hops": 3,
+  "beam": 5,
+  "per_beam": 10,
+  "ctx_chars": 400
+ },
+ "method_hash": "9c4fc27f70",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 609,
+ "corpus_sha256": "35281587dbb96bc0a84d585987042be79e4a2a6ce9d777d99ab8fd3267ceb743",
+ "queries_sha256": "f01cd5eec9deed8f88f81e1348e112cbb13bbac9c2e75a4e4dd67637cfa02eaf",
+ "index_key": "multihop_rag__models-bge-small-mh2__aade206b149c+mhbeam(h3,b5,p10,c400)",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

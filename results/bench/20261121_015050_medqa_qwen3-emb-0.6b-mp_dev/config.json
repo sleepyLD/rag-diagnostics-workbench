@@ -1,0 +1,22 @@
+{
+ "run_id": "20261121_015050_medqa_qwen3-emb-0.6b-mp_dev",
+ "dataset": "medqa",
+ "split": "dev",
+ "method": {
+  "name": "qwen3-emb-0.6b-mp",
+  "type": "dense",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "use_model_prompts": true,
+  "batch_size": 32
+ },
+ "method_hash": "5fa7336176",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 2048,
+ "corpus_sha256": "6bce2b866c429e66caf8be9188ccb609a56379b97db179631ae5fce8e0eacff5",
+ "queries_sha256": "feea0355b12897f673b891c837de9d5445973913d7b2023e74f3f07a930f4c51",
+ "index_key": "medqa__Qwen-Qwen3-Embedding-0.6B__475b1275c3a4",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

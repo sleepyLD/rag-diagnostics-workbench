@@ -1,0 +1,23 @@
+{
+ "run_id": "20261121_203512_scifact_qwen06-dom_dev",
+ "dataset": "scifact",
+ "split": "dev",
+ "method": {
+  "name": "qwen06-dom",
+  "type": "dense",
+  "model": "models/qwen06-dom-lora",
+  "use_model_prompts": true,
+  "task_instruct": true,
+  "batch_size": 32
+ },
+ "method_hash": "e946a0f469",
+ "top_k": 100,
+ "n_queries": 150,
+ "n_corpus": 5183,
+ "corpus_sha256": "73d12730acd7ac25145d56a5024eb4fd9e3adf21dc01149cc8075876a1cd5aa5",
+ "queries_sha256": "e4e10233c5f2f2b3841d8051b4f79a2a9283ad634cf4c96549ce72bc3415ba10",
+ "index_key": "scifact__models-qwen06-dom-lora__4b480a62ad5b",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 50 questions at batch=1, top_k=100"
+}

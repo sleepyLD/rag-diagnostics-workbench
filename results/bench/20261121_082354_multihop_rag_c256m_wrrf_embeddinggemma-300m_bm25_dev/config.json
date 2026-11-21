@@ -1,0 +1,39 @@
+{
+ "run_id": "20261121_082354_multihop_rag_c256m_wrrf_embeddinggemma-300m_bm25_dev",
+ "dataset": "multihop_rag_c256m",
+ "split": "dev",
+ "method": {
+  "name": "wrrf_embeddinggemma-300m_bm25",
+  "type": "fusion",
+  "mode": "rrf",
+  "rrf_k": 60,
+  "weights": [
+   1.0,
+   0.5
+  ],
+  "components": [
+   {
+    "name": "embeddinggemma-300m",
+    "type": "dense",
+    "model": "google/embeddinggemma-300m",
+    "use_model_prompts": true,
+    "batch_size": 32,
+    "fp16": false
+   },
+   {
+    "name": "bm25",
+    "type": "bm25"
+   }
+  ]
+ },
+ "method_hash": "3560bd5b26",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 5636,
+ "corpus_sha256": "5d986793e27ff89b4dbddd601a5acaf56b994705aac2a8988cc00a29a799874a",
+ "queries_sha256": "f01cd5eec9deed8f88f81e1348e112cbb13bbac9c2e75a4e4dd67637cfa02eaf",
+ "index_key": "multihop_rag_c256m__google-embeddinggemma-300m__b401b623e3f3+multihop_rag_c256m__bm25",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

@@ -1,0 +1,47 @@
+{
+ "run_id": "20261120_022502_scifact_rr_wrrf_prf_dev",
+ "dataset": "scifact",
+ "split": "dev",
+ "method": {
+  "name": "rr_wrrf_prf",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_largeprf_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "bge-large-prf",
+     "type": "dense",
+     "model": "BAAI/bge-large-en-v1.5",
+     "query_prefix": "Represent this sentence for searching relevant passages: ",
+     "prf_k": 5,
+     "prf_beta": 0.5
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "947327037f",
+ "top_k": 100,
+ "n_queries": 150,
+ "n_corpus": 5183,
+ "corpus_sha256": "73d12730acd7ac25145d56a5024eb4fd9e3adf21dc01149cc8075876a1cd5aa5",
+ "queries_sha256": "e4e10233c5f2f2b3841d8051b4f79a2a9283ad634cf4c96549ce72bc3415ba10",
+ "index_key": "scifact__BAAI-bge-large-en-v1.5__62039f5c4c93+scifact__bm25+rerank:BAAI/bge-reranker-v2-m3@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 30 questions at batch=1, top_k=100"
+}

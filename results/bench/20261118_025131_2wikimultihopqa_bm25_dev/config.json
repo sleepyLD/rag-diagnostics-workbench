@@ -1,0 +1,19 @@
+{
+ "run_id": "20261118_025131_2wikimultihopqa_bm25_dev",
+ "dataset": "2wikimultihopqa",
+ "split": "dev",
+ "method": {
+  "name": "bm25",
+  "type": "bm25"
+ },
+ "method_hash": "24c1654410",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 40002,
+ "corpus_sha256": "5873951f6f91ec6d1b60a46042f150e0fbdc76d5cef39047282c9a13ef3a58bd",
+ "queries_sha256": "893242a9454c755a644181318130f1d029551002afe0a38be15d7f9883e48d14",
+ "index_key": "2wikimultihopqa__bm25",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

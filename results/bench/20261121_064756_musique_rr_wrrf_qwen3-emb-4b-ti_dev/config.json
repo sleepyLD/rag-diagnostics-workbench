@@ -1,0 +1,47 @@
+{
+ "run_id": "20261121_064756_musique_rr_wrrf_qwen3-emb-4b-ti_dev",
+ "dataset": "musique",
+ "split": "dev",
+ "method": {
+  "name": "rr_wrrf_qwen3-emb-4b-ti",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_qwen3-emb-4b-ti_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "qwen3-emb-4b-ti",
+     "type": "dense",
+     "model": "Qwen/Qwen3-Embedding-4B",
+     "use_model_prompts": true,
+     "batch_size": 8,
+     "task_instruct": true
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "ea02eabf00",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 21093,
+ "corpus_sha256": "0a351ae51862ba6ada7470c41f1469e3ceb1fdfc0060c23d5b6093e9da19a453",
+ "queries_sha256": "e089e33147dc2288382795a20763b115b2fc0af33d9118dcf3b534a9f30b34ba",
+ "index_key": "musique__Qwen-Qwen3-Embedding-4B__83d12e6928e5+musique__bm25+rerank:BAAI/bge-reranker-v2-m3@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

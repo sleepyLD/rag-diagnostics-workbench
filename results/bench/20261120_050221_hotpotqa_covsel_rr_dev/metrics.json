@@ -1,0 +1,95 @@
+{
+ "n": 500,
+ "overall": {
+  "recall@1": 0.454,
+  "recall@3": 0.855,
+  "recall@5": 0.903,
+  "recall@10": 0.937,
+  "recall@20": 0.959,
+  "recall@100": 0.985,
+  "all_gold_hit@3": 0.728,
+  "all_gold_hit@5": 0.814,
+  "all_gold_hit@10": 0.876,
+  "all_gold_hit@20": 0.918,
+  "mrr": 0.9459,
+  "ndcg@10": 0.8935
+ },
+ "by_type": {
+  "bridge": {
+   "n": 410,
+   "recall@1": 0.4476,
+   "recall@3": 0.8232,
+   "recall@5": 0.8817,
+   "recall@10": 0.9232,
+   "recall@20": 0.95,
+   "recall@100": 0.9817,
+   "all_gold_hit@3": 0.6683,
+   "all_gold_hit@5": 0.7732,
+   "all_gold_hit@10": 0.8488,
+   "all_gold_hit@20": 0.9,
+   "mrr": 0.9377,
+   "ndcg@10": 0.8728
+  },
+  "comparison": {
+   "n": 90,
+   "recall@1": 0.4833,
+   "recall@3": 1.0,
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@100": 1.0,
+   "all_gold_hit@3": 1.0,
+   "all_gold_hit@5": 1.0,
+   "all_gold_hit@10": 1.0,
+   "all_gold_hit@20": 1.0,
+   "mrr": 0.9833,
+   "ndcg@10": 0.988
+  }
+ },
+ "by_hops": {
+  "2": {
+   "n": 500,
+   "recall@1": 0.454,
+   "recall@3": 0.855,
+   "recall@5": 0.903,
+   "recall@10": 0.937,
+   "recall@20": 0.959,
+   "recall@100": 0.985,
+   "all_gold_hit@3": 0.728,
+   "all_gold_hit@5": 0.814,
+   "all_gold_hit@10": 0.876,
+   "all_gold_hit@20": 0.918,
+   "mrr": 0.9459,
+   "ndcg@10": 0.8935
+  }
+ },
+ "latency": {
+  "n": 30,
+  "device": "cuda",
+  "total_ms_p50": 925.982,
+  "total_ms_p95": 1206.353,
+  "total_ms_mean": 861.847,
+  "encode_ms_p50": 13.57,
+  "search_ms_p50": 1.041,
+  "post_ms_p50": 902.597,
+  "encode_ms_p95": 21.514,
+  "search_ms_p95": 1.253,
+  "post_ms_p95": 1192.031,
+  "batch_qps": 0.3,
+  "resumed_questions": 0
+ },
+ "index": {
+  "build_s": 111.9,
+  "index_bytes": 182994616,
+  "cached": false,
+  "n_docs": 40003,
+  "rerank_model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "llm": "qwen3:4b-instruct",
+  "n_set_selected": 404,
+  "build_wall_s": 25.39,
+  "index_mb": 174.52,
+  "vram_build_peak_mb": 3448.1,
+  "vram_search_peak_mb": 2608.5
+ }
+}

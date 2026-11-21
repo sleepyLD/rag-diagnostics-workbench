@@ -1,0 +1,53 @@
+{
+ "run_id": "20261118_074815_multihop_rag_c256_chain3x-minilm_fast_dev",
+ "dataset": "multihop_rag_c256",
+ "split": "dev",
+ "method": {
+  "name": "chain3x-minilm_fast",
+  "type": "chain",
+  "first": {
+   "name": "wrrf_small-mh_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "bge-small-mh",
+     "type": "dense",
+     "model": "models/bge-small-mh",
+     "query_prefix": "Represent this sentence for searching relevant passages: "
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "models/chain-minilm",
+  "pool": 20,
+  "beam": 3,
+  "hops": 3,
+  "beam3": 2,
+  "expand": {
+   "name": "bge-small-mh",
+   "type": "dense",
+   "model": "models/bge-small-mh",
+   "query_prefix": "Represent this sentence for searching relevant passages: "
+  },
+  "expand_k": 8
+ },
+ "method_hash": "4f025591d3",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 5636,
+ "corpus_sha256": "289db550810b0469804a49fc1d5436ac8de303428e9b6aa9af500926af785472",
+ "queries_sha256": "f01cd5eec9deed8f88f81e1348e112cbb13bbac9c2e75a4e4dd67637cfa02eaf",
+ "index_key": "multihop_rag_c256__models-bge-small-mh__603cb5f9b455+multihop_rag_c256__bm25+chain:models/chain-minilm(p20,b3,h3,x8)+exp:multihop_rag_c256__models-bge-small-mh__603cb5f9b455",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

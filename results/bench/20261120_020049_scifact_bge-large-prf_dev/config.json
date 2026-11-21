@@ -1,0 +1,23 @@
+{
+ "run_id": "20261120_020049_scifact_bge-large-prf_dev",
+ "dataset": "scifact",
+ "split": "dev",
+ "method": {
+  "name": "bge-large-prf",
+  "type": "dense",
+  "model": "BAAI/bge-large-en-v1.5",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "prf_k": 5,
+  "prf_beta": 0.5
+ },
+ "method_hash": "548c7eb7b5",
+ "top_k": 100,
+ "n_queries": 150,
+ "n_corpus": 5183,
+ "corpus_sha256": "73d12730acd7ac25145d56a5024eb4fd9e3adf21dc01149cc8075876a1cd5aa5",
+ "queries_sha256": "e4e10233c5f2f2b3841d8051b4f79a2a9283ad634cf4c96549ce72bc3415ba10",
+ "index_key": "scifact__BAAI-bge-large-en-v1.5__62039f5c4c93",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 30 questions at batch=1, top_k=100"
+}

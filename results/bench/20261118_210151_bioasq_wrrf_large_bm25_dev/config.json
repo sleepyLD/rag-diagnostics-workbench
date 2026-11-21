@@ -1,0 +1,37 @@
+{
+ "run_id": "20261118_210151_bioasq_wrrf_large_bm25_dev",
+ "dataset": "bioasq",
+ "split": "dev",
+ "method": {
+  "name": "wrrf_large_bm25",
+  "type": "fusion",
+  "mode": "rrf",
+  "rrf_k": 60,
+  "weights": [
+   1.0,
+   0.5
+  ],
+  "components": [
+   {
+    "name": "bge-large",
+    "type": "dense",
+    "model": "BAAI/bge-large-en-v1.5",
+    "query_prefix": "Represent this sentence for searching relevant passages: "
+   },
+   {
+    "name": "bm25",
+    "type": "bm25"
+   }
+  ]
+ },
+ "method_hash": "adf151c187",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 40221,
+ "corpus_sha256": "bb03b68e0df05714499de87d387bcb7a78477ec48ab806cf5dce3ccc73a47cbc",
+ "queries_sha256": "9dd05e182c3379d8f8e77d965abf780f6e1b7d53acfcb2a6fed55074df5c863e",
+ "index_key": "bioasq__BAAI-bge-large-en-v1.5__b05dbdb9b284+bioasq__bm25",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

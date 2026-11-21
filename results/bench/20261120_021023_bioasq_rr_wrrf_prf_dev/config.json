@@ -1,0 +1,47 @@
+{
+ "run_id": "20261120_021023_bioasq_rr_wrrf_prf_dev",
+ "dataset": "bioasq",
+ "split": "dev",
+ "method": {
+  "name": "rr_wrrf_prf",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_largeprf_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "bge-large-prf",
+     "type": "dense",
+     "model": "BAAI/bge-large-en-v1.5",
+     "query_prefix": "Represent this sentence for searching relevant passages: ",
+     "prf_k": 5,
+     "prf_beta": 0.5
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "947327037f",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 27974,
+ "corpus_sha256": "ae48a28955cac5dedc24969a74d454e5b648fb6ff7a05b193da7933d5de55f93",
+ "queries_sha256": "891b82bf15c4831e8d620f94d340cb5ee44ab9b190e32a3536e0472d74d2e3cf",
+ "index_key": "bioasq__BAAI-bge-large-en-v1.5__d30cf5c2f3b8+bioasq__bm25+rerank:BAAI/bge-reranker-v2-m3@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 30 questions at batch=1, top_k=100"
+}

@@ -1,0 +1,22 @@
+{
+ "run_id": "20261118_035034_musique_qwen3-emb-0.6b_dev",
+ "dataset": "musique",
+ "split": "dev",
+ "method": {
+  "name": "qwen3-emb-0.6b",
+  "type": "dense",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "query_prefix": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+  "batch_size": 32
+ },
+ "method_hash": "7383be6afe",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 21093,
+ "corpus_sha256": "0a351ae51862ba6ada7470c41f1469e3ceb1fdfc0060c23d5b6093e9da19a453",
+ "queries_sha256": "e089e33147dc2288382795a20763b115b2fc0af33d9118dcf3b534a9f30b34ba",
+ "index_key": "musique__Qwen-Qwen3-Embedding-0.6B__fbef46350723",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

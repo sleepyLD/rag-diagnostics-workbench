@@ -1,0 +1,123 @@
+{
+ "n": 150,
+ "overall": {
+  "recall@1": 0.2361,
+  "recall@3": 0.4928,
+  "recall@5": 0.56,
+  "recall@10": 0.7217,
+  "recall@20": 0.8789,
+  "recall@100": 0.9733,
+  "all_gold_hit@3": 0.4733,
+  "all_gold_hit@5": 0.54,
+  "all_gold_hit@10": 0.6933,
+  "all_gold_hit@20": 0.8733,
+  "mrr": 0.4272,
+  "ndcg@10": 0.482
+ },
+ "by_type": {
+  "claim": {
+   "n": 150,
+   "recall@1": 0.2361,
+   "recall@3": 0.4928,
+   "recall@5": 0.56,
+   "recall@10": 0.7217,
+   "recall@20": 0.8789,
+   "recall@100": 0.9733,
+   "all_gold_hit@3": 0.4733,
+   "all_gold_hit@5": 0.54,
+   "all_gold_hit@10": 0.6933,
+   "all_gold_hit@20": 0.8733,
+   "mrr": 0.4272,
+   "ndcg@10": 0.482
+  }
+ },
+ "by_hops": {
+  "1": {
+   "n": 137,
+   "recall@1": 0.2409,
+   "recall@3": 0.5036,
+   "recall@5": 0.5693,
+   "recall@10": 0.7299,
+   "recall@20": 0.8832,
+   "recall@100": 0.9708,
+   "all_gold_hit@3": 0.5036,
+   "all_gold_hit@5": 0.5693,
+   "all_gold_hit@10": 0.7299,
+   "all_gold_hit@20": 0.8832,
+   "mrr": 0.412,
+   "ndcg@10": 0.4784
+  },
+  "2": {
+   "n": 8,
+   "recall@1": 0.1875,
+   "recall@3": 0.3125,
+   "recall@5": 0.375,
+   "recall@10": 0.5625,
+   "recall@20": 0.8125,
+   "recall@100": 1.0,
+   "all_gold_hit@3": 0.125,
+   "all_gold_hit@5": 0.25,
+   "all_gold_hit@10": 0.25,
+   "all_gold_hit@20": 0.75,
+   "mrr": 0.493,
+   "ndcg@10": 0.4313
+  },
+  "3": {
+   "n": 3,
+   "recall@1": 0.2222,
+   "recall@3": 0.5556,
+   "recall@5": 0.6667,
+   "recall@10": 0.6667,
+   "recall@20": 0.7778,
+   "recall@100": 1.0,
+   "all_gold_hit@3": 0.3333,
+   "all_gold_hit@5": 0.3333,
+   "all_gold_hit@10": 0.3333,
+   "all_gold_hit@20": 0.6667,
+   "mrr": 0.8333,
+   "ndcg@10": 0.6558
+  },
+  "4": {
+   "n": 2,
+   "recall@1": 0.125,
+   "recall@3": 0.375,
+   "recall@5": 0.5,
+   "recall@10": 0.875,
+   "recall@20": 1.0,
+   "recall@100": 1.0,
+   "all_gold_hit@3": 0.0,
+   "all_gold_hit@5": 0.0,
+   "all_gold_hit@10": 0.5,
+   "all_gold_hit@20": 1.0,
+   "mrr": 0.6,
+   "ndcg@10": 0.6762
+  }
+ },
+ "latency": {
+  "n": 150,
+  "device": "cuda",
+  "total_ms_p50": 359.23,
+  "total_ms_p95": 410.929,
+  "total_ms_mean": 362.811,
+  "encode_ms_p50": 59.061,
+  "search_ms_p50": 1.03,
+  "post_ms_p50": 331.6,
+  "encode_ms_p95": 63.868,
+  "search_ms_p95": 1.227,
+  "post_ms_p95": 383.325,
+  "batch_qps": 4.5
+ },
+ "index": {
+  "build_s": 38.32,
+  "index_bytes": 26279584,
+  "cached": false,
+  "n_docs": 5183,
+  "chain_model": "models/chain-minilm",
+  "pool": 30,
+  "beam": 4,
+  "build_wall_s": 8.19,
+  "index_mb": 25.06,
+  "vram_build_peak_mb": 1339.2,
+  "vram_search_peak_mb": 1201.7
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "run_id": "20261121_110442_medqa_qwen3-emb-4b-ti_holdout",
+ "dataset": "medqa",
+ "split": "holdout",
+ "method": {
+  "name": "qwen3-emb-4b-ti",
+  "type": "dense",
+  "model": "Qwen/Qwen3-Embedding-4B",
+  "use_model_prompts": true,
+  "batch_size": 8,
+  "task_instruct": true
+ },
+ "method_hash": "26cb5b912c",
+ "top_k": 100,
+ "n_queries": 300,
+ "n_corpus": 2048,
+ "corpus_sha256": "6bce2b866c429e66caf8be9188ccb609a56379b97db179631ae5fce8e0eacff5",
+ "queries_sha256": "e22c886f604cac2bcb994bb53bf131f0a8ef5571eaf4e52c58f00f4c0a9503eb",
+ "index_key": "medqa__Qwen-Qwen3-Embedding-4B__dafd2c566ae2",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 50 questions at batch=1, top_k=100"
+}

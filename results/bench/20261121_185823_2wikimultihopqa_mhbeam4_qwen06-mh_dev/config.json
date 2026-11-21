@@ -1,0 +1,31 @@
+{
+ "run_id": "20261121_185823_2wikimultihopqa_mhbeam4_qwen06-mh_dev",
+ "dataset": "2wikimultihopqa",
+ "split": "dev",
+ "method": {
+  "name": "mhbeam4_qwen06-mh",
+  "type": "mhbeam",
+  "base": {
+   "name": "qwen06-mh",
+   "type": "dense",
+   "model": "models/qwen06-mh-lora",
+   "use_model_prompts": true,
+   "task_instruct": true,
+   "batch_size": 32
+  },
+  "hops": 4,
+  "beam": 8,
+  "per_beam": 10,
+  "ctx_chars": 400
+ },
+ "method_hash": "c18e606c39",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 40002,
+ "corpus_sha256": "5873951f6f91ec6d1b60a46042f150e0fbdc76d5cef39047282c9a13ef3a58bd",
+ "queries_sha256": "893242a9454c755a644181318130f1d029551002afe0a38be15d7f9883e48d14",
+ "index_key": "2wikimultihopqa__models-qwen06-mh-lora__630e6f073c55+mhbeam(h4,b8,p10,c400)",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 50 questions at batch=1, top_k=100"
+}

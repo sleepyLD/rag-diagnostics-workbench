@@ -1,0 +1,66 @@
+{
+ "run_id": "20261118_100311_musique_decomp-q3-4b_dev",
+ "dataset": "musique",
+ "split": "dev",
+ "method": {
+  "name": "decomp-q3-4b",
+  "type": "decomp",
+  "base": {
+   "name": "rr30_wrrf",
+   "type": "rerank",
+   "first": {
+    "name": "wrrf_large_bm25",
+    "type": "fusion",
+    "mode": "rrf",
+    "rrf_k": 60,
+    "weights": [
+     1.0,
+     0.5
+    ],
+    "components": [
+     {
+      "name": "bge-large",
+      "type": "dense",
+      "model": "BAAI/bge-large-en-v1.5",
+      "query_prefix": "Represent this sentence for searching relevant passages: "
+     },
+     {
+      "name": "bm25",
+      "type": "bm25"
+     }
+    ]
+   },
+   "model": "BAAI/bge-reranker-v2-m3",
+   "depth": 30,
+   "batch_size": 32,
+   "max_length": 512
+  },
+  "llm": "qwen3:4b-instruct",
+  "max_steps": 4,
+  "per_step": 3,
+  "fallback": {
+   "name": "mhbeam4_base-mh2",
+   "type": "mhbeam",
+   "base": {
+    "name": "bge-base-mh2",
+    "type": "dense",
+    "model": "models/bge-base-mh2",
+    "query_prefix": "Represent this sentence for searching relevant passages: "
+   },
+   "hops": 4,
+   "beam": 8,
+   "per_beam": 10,
+   "ctx_chars": 400
+  }
+ },
+ "method_hash": "e78570f4aa",
+ "top_k": 100,
+ "n_queries": 20,
+ "n_corpus": 21093,
+ "corpus_sha256": "0a351ae51862ba6ada7470c41f1469e3ceb1fdfc0060c23d5b6093e9da19a453",
+ "queries_sha256": "e089e33147dc2288382795a20763b115b2fc0af33d9118dcf3b534a9f30b34ba",
+ "index_key": "musique__BAAI-bge-large-en-v1.5__3917d2f8ae4e+musique__bm25+rerank:BAAI/bge-reranker-v2-m3@30+decomp:qwen3:4b-instruct(s4,p3)+fb:musique__models-bge-base-mh2__6f01de16cc16+mhbeam(h4,b8,p10,c400)",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 5 questions at batch=1, top_k=100"
+}

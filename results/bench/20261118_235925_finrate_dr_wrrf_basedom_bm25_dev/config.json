@@ -1,0 +1,37 @@
+{
+ "run_id": "20261118_235925_finrate_dr_wrrf_basedom_bm25_dev",
+ "dataset": "finrate_dr",
+ "split": "dev",
+ "method": {
+  "name": "wrrf_basedom_bm25",
+  "type": "fusion",
+  "mode": "rrf",
+  "rrf_k": 60,
+  "weights": [
+   1.0,
+   0.5
+  ],
+  "components": [
+   {
+    "name": "bge-base-dom",
+    "type": "dense",
+    "model": "models/bge-base-dom",
+    "query_prefix": "Represent this sentence for searching relevant passages: "
+   },
+   {
+    "name": "bm25",
+    "type": "bm25"
+   }
+  ]
+ },
+ "method_hash": "a81d121ac2",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 15311,
+ "corpus_sha256": "5af683eab0ddb878f417446249569f22d16bf5c6528598a4d3a8e2c96ca5ff46",
+ "queries_sha256": "57e323207131ef54c1dbb90a335823c9e7c1d2d9f0542a06f223b94accc2681d",
+ "index_key": "finrate_dr__models-bge-base-dom__08bdf6ec06a4+finrate_dr__bm25",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

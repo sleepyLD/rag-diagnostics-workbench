@@ -1,0 +1,39 @@
+{
+ "run_id": "20261121_071026_hotpotqa_wrrf_harrier-0.6b-ti_bm25_dev",
+ "dataset": "hotpotqa",
+ "split": "dev",
+ "method": {
+  "name": "wrrf_harrier-0.6b-ti_bm25",
+  "type": "fusion",
+  "mode": "rrf",
+  "rrf_k": 60,
+  "weights": [
+   1.0,
+   0.5
+  ],
+  "components": [
+   {
+    "name": "harrier-0.6b-ti",
+    "type": "dense",
+    "model": "microsoft/harrier-oss-v1-0.6b",
+    "use_model_prompts": true,
+    "batch_size": 32,
+    "task_instruct": true
+   },
+   {
+    "name": "bm25",
+    "type": "bm25"
+   }
+  ]
+ },
+ "method_hash": "eaa009582b",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 40003,
+ "corpus_sha256": "2b14e0396a91e5abd7ba5185f50289528d458666196a6c1c2b5ee63e6f8f3b22",
+ "queries_sha256": "d275efa438b9d64a84532630563a0ef2fc1d2f5e5898f484d7ea29b47288500d",
+ "index_key": "hotpotqa__microsoft-harrier-oss-v1-0.6b__f0f97f941c77+hotpotqa__bm25",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

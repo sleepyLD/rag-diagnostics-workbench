@@ -1,0 +1,29 @@
+{
+ "run_id": "20261118_092200_scifact_mhbeam3_small-mh2_dev",
+ "dataset": "scifact",
+ "split": "dev",
+ "method": {
+  "name": "mhbeam3_small-mh2",
+  "type": "mhbeam",
+  "base": {
+   "name": "bge-small-mh2",
+   "type": "dense",
+   "model": "models/bge-small-mh2",
+   "query_prefix": "Represent this sentence for searching relevant passages: "
+  },
+  "hops": 3,
+  "beam": 5,
+  "per_beam": 10,
+  "ctx_chars": 400
+ },
+ "method_hash": "9c4fc27f70",
+ "top_k": 100,
+ "n_queries": 150,
+ "n_corpus": 5183,
+ "corpus_sha256": "73d12730acd7ac25145d56a5024eb4fd9e3adf21dc01149cc8075876a1cd5aa5",
+ "queries_sha256": "e4e10233c5f2f2b3841d8051b4f79a2a9283ad634cf4c96549ce72bc3415ba10",
+ "index_key": "scifact__models-bge-small-mh2__9a41ce20728d+mhbeam(h3,b5,p10,c400)",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 150 questions at batch=1, top_k=100"
+}

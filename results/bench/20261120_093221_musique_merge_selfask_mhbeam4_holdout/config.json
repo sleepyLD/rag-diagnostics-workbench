@@ -1,0 +1,104 @@
+{
+ "run_id": "20261120_093221_musique_merge_selfask_mhbeam4_holdout",
+ "dataset": "musique",
+ "split": "holdout",
+ "method": {
+  "name": "merge_selfask_mhbeam4",
+  "type": "fusion",
+  "mode": "head",
+  "head": 5,
+  "components": [
+   {
+    "name": "selfask-q3-4b",
+    "type": "decomp",
+    "base": {
+     "name": "rr30_wrrf",
+     "type": "rerank",
+     "first": {
+      "name": "wrrf_large_bm25",
+      "type": "fusion",
+      "mode": "rrf",
+      "rrf_k": 60,
+      "weights": [
+       1.0,
+       0.5
+      ],
+      "components": [
+       {
+        "name": "bge-large",
+        "type": "dense",
+        "model": "BAAI/bge-large-en-v1.5",
+        "query_prefix": "Represent this sentence for searching relevant passages: "
+       },
+       {
+        "name": "bm25",
+        "type": "bm25"
+       }
+      ]
+     },
+     "model": "BAAI/bge-reranker-v2-m3",
+     "depth": 30,
+     "batch_size": 32,
+     "max_length": 512
+    },
+    "llm": "qwen3:4b-instruct",
+    "max_steps": 4,
+    "per_step": 3,
+    "fallback": {
+     "name": "rr30_wrrf",
+     "type": "rerank",
+     "first": {
+      "name": "wrrf_large_bm25",
+      "type": "fusion",
+      "mode": "rrf",
+      "rrf_k": 60,
+      "weights": [
+       1.0,
+       0.5
+      ],
+      "components": [
+       {
+        "name": "bge-large",
+        "type": "dense",
+        "model": "BAAI/bge-large-en-v1.5",
+        "query_prefix": "Represent this sentence for searching relevant passages: "
+       },
+       {
+        "name": "bm25",
+        "type": "bm25"
+       }
+      ]
+     },
+     "model": "BAAI/bge-reranker-v2-m3",
+     "depth": 30,
+     "batch_size": 32,
+     "max_length": 512
+    }
+   },
+   {
+    "name": "mhbeam4_base-mh2",
+    "type": "mhbeam",
+    "base": {
+     "name": "bge-base-mh2",
+     "type": "dense",
+     "model": "models/bge-base-mh2",
+     "query_prefix": "Represent this sentence for searching relevant passages: "
+    },
+    "hops": 4,
+    "beam": 8,
+    "per_beam": 10,
+    "ctx_chars": 400
+   }
+  ]
+ },
+ "method_hash": "995455256e",
+ "top_k": 100,
+ "n_queries": 300,
+ "n_corpus": 21093,
+ "corpus_sha256": "0a351ae51862ba6ada7470c41f1469e3ceb1fdfc0060c23d5b6093e9da19a453",
+ "queries_sha256": "940a1594822a2636acacf85c3120b89e15e8acb88616c896e173d0ad66967cf3",
+ "index_key": "musique__BAAI-bge-large-en-v1.5__3917d2f8ae4e+musique__bm25+rerank:BAAI/bge-reranker-v2-m3@30+decomp:qwen3:4b-instruct(s4,p3)+fb:musique__BAAI-bge-large-en-v1.5__3917d2f8ae4e+musique__bm25+rerank:BAAI/bge-reranker-v2-m3@30+musique__models-bge-base-mh2__6f01de16cc16+mhbeam(h4,b8,p10,c400)",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 20 questions at batch=1, top_k=100"
+}

@@ -1,0 +1,47 @@
+{
+ "run_id": "20261121_083552_nfcorpus_rr_wrrf_embeddinggemma-300m_dev",
+ "dataset": "nfcorpus",
+ "split": "dev",
+ "method": {
+  "name": "rr_wrrf_embeddinggemma-300m",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_embeddinggemma-300m_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "embeddinggemma-300m",
+     "type": "dense",
+     "model": "google/embeddinggemma-300m",
+     "use_model_prompts": true,
+     "batch_size": 32,
+     "fp16": false
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "89cd1e3e48",
+ "top_k": 100,
+ "n_queries": 403,
+ "n_corpus": 3633,
+ "corpus_sha256": "9e62ea5f1e779d83230edb3dda6a2a25abd25463f9b353a74b6d583590b2f044",
+ "queries_sha256": "4896d9b31dcd58efe09083376d4a258f28aad55fce94a5938c7a576226b1672d",
+ "index_key": "nfcorpus__google-embeddinggemma-300m__1ea38011bff0+nfcorpus__bm25+rerank:BAAI/bge-reranker-v2-m3@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

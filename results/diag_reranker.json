@@ -1,0 +1,110 @@
+{
+ "BAAI/bge-reranker-v2-m3|fp32|medqa": {
+  "first_stage@10": 0.83,
+  "rerank_logit@10": 0.87,
+  "rerank_sigmoid@10": 0.87,
+  "logit_mean": -3.96,
+  "logit_p5": -8.51,
+  "logit_p95": 2.09,
+  "frac_logit_gt_5": 0.012
+ },
+ "BAAI/bge-reranker-v2-m3|fp32|bioasq": {
+  "first_stage@10": 0.54,
+  "rerank_logit@10": 0.66,
+  "rerank_sigmoid@10": 0.66,
+  "logit_mean": -3.99,
+  "logit_p5": -9.54,
+  "logit_p95": 2.98,
+  "frac_logit_gt_5": 0.018
+ },
+ "BAAI/bge-reranker-v2-m3|fp32|finrate_dr": {
+  "first_stage@10": 0.34,
+  "rerank_logit@10": 0.37,
+  "rerank_sigmoid@10": 0.37,
+  "logit_mean": -0.24,
+  "logit_p5": -3.3,
+  "logit_p95": 2.8,
+  "frac_logit_gt_5": 0.01
+ },
+ "BAAI/bge-reranker-v2-m3|fp16|medqa": {
+  "first_stage@10": 0.83,
+  "rerank_logit@10": 0.87,
+  "rerank_sigmoid@10": 0.87,
+  "logit_mean": -3.96,
+  "logit_p5": -8.52,
+  "logit_p95": 2.09,
+  "frac_logit_gt_5": 0.012
+ },
+ "BAAI/bge-reranker-v2-m3|fp16|bioasq": {
+  "first_stage@10": 0.54,
+  "rerank_logit@10": 0.66,
+  "rerank_sigmoid@10": 0.66,
+  "logit_mean": -3.99,
+  "logit_p5": -9.54,
+  "logit_p95": 2.97,
+  "frac_logit_gt_5": 0.018
+ },
+ "BAAI/bge-reranker-v2-m3|fp16|finrate_dr": {
+  "first_stage@10": 0.34,
+  "rerank_logit@10": 0.37,
+  "rerank_sigmoid@10": 0.37,
+  "logit_mean": -0.24,
+  "logit_p5": -3.3,
+  "logit_p95": 2.81,
+  "frac_logit_gt_5": 0.01
+ },
+ "models/rr-m3-dom|fp32|medqa": {
+  "first_stage@10": 0.83,
+  "rerank_logit@10": 0.73,
+  "rerank_sigmoid@10": 0.73,
+  "logit_mean": -1.06,
+  "logit_p5": -6.92,
+  "logit_p95": 6.11,
+  "frac_logit_gt_5": 0.096
+ },
+ "models/rr-m3-dom|fp32|bioasq": {
+  "first_stage@10": 0.54,
+  "rerank_logit@10": 0.46,
+  "rerank_sigmoid@10": 0.46,
+  "logit_mean": -1.39,
+  "logit_p5": -7.05,
+  "logit_p95": 6.58,
+  "frac_logit_gt_5": 0.083
+ },
+ "models/rr-m3-dom|fp32|finrate_dr": {
+  "first_stage@10": 0.34,
+  "rerank_logit@10": 0.36,
+  "rerank_sigmoid@10": 0.36,
+  "logit_mean": -0.65,
+  "logit_p5": -4.29,
+  "logit_p95": 2.82,
+  "frac_logit_gt_5": 0.0
+ },
+ "models/rr-m3-dom|fp16|medqa": {
+  "first_stage@10": 0.83,
+  "rerank_logit@10": 0.72,
+  "rerank_sigmoid@10": 0.72,
+  "logit_mean": -1.06,
+  "logit_p5": -6.92,
+  "logit_p95": 6.12,
+  "frac_logit_gt_5": 0.096
+ },
+ "models/rr-m3-dom|fp16|bioasq": {
+  "first_stage@10": 0.54,
+  "rerank_logit@10": 0.46,
+  "rerank_sigmoid@10": 0.46,
+  "logit_mean": -1.39,
+  "logit_p5": -7.05,
+  "logit_p95": 6.58,
+  "frac_logit_gt_5": 0.083
+ },
+ "models/rr-m3-dom|fp16|finrate_dr": {
+  "first_stage@10": 0.34,
+  "rerank_logit@10": 0.36,
+  "rerank_sigmoid@10": 0.36,
+  "logit_mean": -0.65,
+  "logit_p5": -4.29,
+  "logit_p95": 2.82,
+  "frac_logit_gt_5": 0.0
+ }
+}

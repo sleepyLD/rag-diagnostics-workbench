@@ -1,0 +1,21 @@
+{
+ "run_id": "20261121_105417_scifact_bge-large_holdout",
+ "dataset": "scifact",
+ "split": "holdout",
+ "method": {
+  "name": "bge-large",
+  "type": "dense",
+  "model": "BAAI/bge-large-en-v1.5",
+  "query_prefix": "Represent this sentence for searching relevant passages: "
+ },
+ "method_hash": "0672cc2124",
+ "top_k": 100,
+ "n_queries": 150,
+ "n_corpus": 5183,
+ "corpus_sha256": "73d12730acd7ac25145d56a5024eb4fd9e3adf21dc01149cc8075876a1cd5aa5",
+ "queries_sha256": "bd959e6e2852646f61c2dc37f4859463205e3fedd1a9accba4857c250292a10d",
+ "index_key": "scifact__BAAI-bge-large-en-v1.5__62039f5c4c93",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 50 questions at batch=1, top_k=100"
+}

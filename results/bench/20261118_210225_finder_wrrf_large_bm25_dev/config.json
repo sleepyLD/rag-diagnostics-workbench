@@ -1,0 +1,37 @@
+{
+ "run_id": "20261118_210225_finder_wrrf_large_bm25_dev",
+ "dataset": "finder",
+ "split": "dev",
+ "method": {
+  "name": "wrrf_large_bm25",
+  "type": "fusion",
+  "mode": "rrf",
+  "rrf_k": 60,
+  "weights": [
+   1.0,
+   0.5
+  ],
+  "components": [
+   {
+    "name": "bge-large",
+    "type": "dense",
+    "model": "BAAI/bge-large-en-v1.5",
+    "query_prefix": "Represent this sentence for searching relevant passages: "
+   },
+   {
+    "name": "bm25",
+    "type": "bm25"
+   }
+  ]
+ },
+ "method_hash": "adf151c187",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 5832,
+ "corpus_sha256": "8acb73aa2e631dbd069de340f00909d580243fea3bc03309457775746cb35468",
+ "queries_sha256": "9e980ef329695e2c6a9f03a543cd2039adc9b4a89a87d26bf5f36831d5660a4a",
+ "index_key": "finder__BAAI-bge-large-en-v1.5__3aa3a6ee8c0c+finder__bm25",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

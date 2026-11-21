@@ -1,0 +1,10 @@
+{
+ "run": "20261118_093619_musique_mhbeam4_base-mh2_dev",
+ "mode": "rag",
+ "k": 5,
+ "model": "qwen3:4b-instruct",
+ "n": 200,
+ "accuracy": 0.18,
+ "acc_when_gold_in_context": 0.3684,
+ "minutes": 9.3
+}

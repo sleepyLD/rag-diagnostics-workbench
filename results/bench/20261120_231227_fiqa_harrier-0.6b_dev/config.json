@@ -1,0 +1,22 @@
+{
+ "run_id": "20261120_231227_fiqa_harrier-0.6b_dev",
+ "dataset": "fiqa",
+ "split": "dev",
+ "method": {
+  "name": "harrier-0.6b",
+  "type": "dense",
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "use_model_prompts": true,
+  "batch_size": 32
+ },
+ "method_hash": "49cd1ee2e0",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 57600,
+ "corpus_sha256": "e8f998a5afb42f2a07807b1b4ad5d8497ef084465424cc21a7013e579bb35267",
+ "queries_sha256": "2b2d50cc6b0c276b6213cfc1953228db28dc68d0530dd5d15dedbe62cdcd3d24",
+ "index_key": "fiqa__microsoft-harrier-oss-v1-0.6b__a62c1af53751",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

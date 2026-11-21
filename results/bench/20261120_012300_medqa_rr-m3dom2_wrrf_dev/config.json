@@ -1,0 +1,45 @@
+{
+ "run_id": "20261120_012300_medqa_rr-m3dom2_wrrf_dev",
+ "dataset": "medqa",
+ "split": "dev",
+ "method": {
+  "name": "rr-m3dom2_wrrf",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_large_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "bge-large",
+     "type": "dense",
+     "model": "BAAI/bge-large-en-v1.5",
+     "query_prefix": "Represent this sentence for searching relevant passages: "
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "models/rr-m3-dom2",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "8c8152deb7",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 2048,
+ "corpus_sha256": "6bce2b866c429e66caf8be9188ccb609a56379b97db179631ae5fce8e0eacff5",
+ "queries_sha256": "feea0355b12897f673b891c837de9d5445973913d7b2023e74f3f07a930f4c51",
+ "index_key": "medqa__BAAI-bge-large-en-v1.5__8a3a5cfb6124+medqa__bm25+rerank:models/rr-m3-dom2@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 30 questions at batch=1, top_k=100"
+}

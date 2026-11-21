@@ -1,0 +1,75 @@
+{
+ "n": 500,
+ "overall": {
+  "recall@1": 0.698,
+  "recall@3": 0.798,
+  "recall@5": 0.86,
+  "recall@10": 0.932,
+  "recall@20": 0.98,
+  "recall@100": 0.996,
+  "all_gold_hit@3": 0.798,
+  "all_gold_hit@5": 0.86,
+  "all_gold_hit@10": 0.932,
+  "all_gold_hit@20": 0.98,
+  "mrr": 0.7708,
+  "ndcg@10": 0.8061
+ },
+ "by_type": {
+  "single": {
+   "n": 500,
+   "recall@1": 0.698,
+   "recall@3": 0.798,
+   "recall@5": 0.86,
+   "recall@10": 0.932,
+   "recall@20": 0.98,
+   "recall@100": 0.996,
+   "all_gold_hit@3": 0.798,
+   "all_gold_hit@5": 0.86,
+   "all_gold_hit@10": 0.932,
+   "all_gold_hit@20": 0.98,
+   "mrr": 0.7708,
+   "ndcg@10": 0.8061
+  }
+ },
+ "by_hops": {
+  "1": {
+   "n": 500,
+   "recall@1": 0.698,
+   "recall@3": 0.798,
+   "recall@5": 0.86,
+   "recall@10": 0.932,
+   "recall@20": 0.98,
+   "recall@100": 0.996,
+   "all_gold_hit@3": 0.798,
+   "all_gold_hit@5": 0.86,
+   "all_gold_hit@10": 0.932,
+   "all_gold_hit@20": 0.98,
+   "mrr": 0.7708,
+   "ndcg@10": 0.8061
+  }
+ },
+ "latency": {
+  "n": 200,
+  "device": "cuda",
+  "total_ms_p50": 82.684,
+  "total_ms_p95": 102.0,
+  "total_ms_mean": 81.894,
+  "encode_ms_p50": 73.865,
+  "search_ms_p50": 7.501,
+  "post_ms_p50": 1.389,
+  "encode_ms_p95": 90.866,
+  "search_ms_p95": 9.52,
+  "post_ms_p95": 1.723,
+  "batch_qps": 28.3
+ },
+ "index": {
+  "build_s": 77.89,
+  "index_bytes": 99163168,
+  "cached": false,
+  "n_docs": 20958,
+  "build_wall_s": 8.41,
+  "index_mb": 94.57,
+  "vram_build_peak_mb": 1339.2,
+  "vram_search_peak_mb": 1095.6
+ }
+}

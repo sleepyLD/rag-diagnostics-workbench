@@ -1,0 +1,123 @@
+{
+ "n": 500,
+ "overall": {
+  "recall@1": 0.0958,
+  "recall@3": 0.2501,
+  "recall@5": 0.3315,
+  "recall@10": 0.4432,
+  "recall@20": 0.5385,
+  "recall@100": 0.6893,
+  "all_gold_hit@3": 0.176,
+  "all_gold_hit@5": 0.282,
+  "all_gold_hit@10": 0.452,
+  "all_gold_hit@20": 0.576,
+  "mrr": 0.4696,
+  "ndcg@10": 0.3562
+ },
+ "by_type": {
+  "cross_company": {
+   "n": 258,
+   "recall@1": 0.0496,
+   "recall@3": 0.1301,
+   "recall@5": 0.1912,
+   "recall@10": 0.2675,
+   "recall@20": 0.3312,
+   "recall@100": 0.5017,
+   "all_gold_hit@3": 0.0388,
+   "all_gold_hit@5": 0.1124,
+   "all_gold_hit@10": 0.2597,
+   "all_gold_hit@20": 0.3488,
+   "mrr": 0.3887,
+   "ndcg@10": 0.2262
+  },
+  "cross_year": {
+   "n": 242,
+   "recall@1": 0.1451,
+   "recall@3": 0.378,
+   "recall@5": 0.4812,
+   "recall@10": 0.6304,
+   "recall@20": 0.7595,
+   "recall@100": 0.8893,
+   "all_gold_hit@3": 0.3223,
+   "all_gold_hit@5": 0.4628,
+   "all_gold_hit@10": 0.657,
+   "all_gold_hit@20": 0.8182,
+   "mrr": 0.5559,
+   "ndcg@10": 0.4947
+  }
+ },
+ "by_hops": {
+  "2": {
+   "n": 494,
+   "recall@1": 0.0949,
+   "recall@3": 0.2476,
+   "recall@5": 0.3279,
+   "recall@10": 0.438,
+   "recall@20": 0.5345,
+   "recall@100": 0.6863,
+   "all_gold_hit@3": 0.1761,
+   "all_gold_hit@5": 0.2794,
+   "all_gold_hit@10": 0.4453,
+   "all_gold_hit@20": 0.5709,
+   "mrr": 0.4657,
+   "ndcg@10": 0.3515
+  },
+  "3": {
+   "n": 5,
+   "recall@1": 0.1733,
+   "recall@3": 0.4933,
+   "recall@5": 0.64,
+   "recall@10": 0.84,
+   "recall@20": 0.84,
+   "recall@100": 0.92,
+   "all_gold_hit@3": 0.2,
+   "all_gold_hit@5": 0.6,
+   "all_gold_hit@10": 1.0,
+   "all_gold_hit@20": 1.0,
+   "mrr": 0.75,
+   "ndcg@10": 0.7081
+  },
+  "4": {
+   "n": 1,
+   "recall@1": 0.1429,
+   "recall@3": 0.2857,
+   "recall@5": 0.5714,
+   "recall@10": 1.0,
+   "recall@20": 1.0,
+   "recall@100": 1.0,
+   "all_gold_hit@3": 0.0,
+   "all_gold_hit@5": 0.0,
+   "all_gold_hit@10": 1.0,
+   "all_gold_hit@20": 1.0,
+   "mrr": 1.0,
+   "ndcg@10": 0.9011
+  }
+ },
+ "latency": {
+  "n": 30,
+  "device": "cuda",
+  "total_ms_p50": 947.607,
+  "total_ms_p95": 960.406,
+  "total_ms_mean": 947.897,
+  "encode_ms_p50": 18.298,
+  "search_ms_p50": 7.708,
+  "post_ms_p50": 921.429,
+  "encode_ms_p95": 27.549,
+  "search_ms_p95": 10.38,
+  "post_ms_p95": 925.812,
+  "batch_qps": 1.1,
+  "resumed_questions": 0
+ },
+ "index": {
+  "build_s": 2020.64,
+  "index_bytes": 1081935308,
+  "cached": false,
+  "n_docs": 216480,
+  "rerank_model": "models/rr-m3-dom2",
+  "depth": 100,
+  "build_wall_s": 38.43,
+  "index_mb": 1031.81,
+  "vram_build_peak_mb": 4137.9,
+  "vram_search_peak_mb": 3298.8
+ }
+}

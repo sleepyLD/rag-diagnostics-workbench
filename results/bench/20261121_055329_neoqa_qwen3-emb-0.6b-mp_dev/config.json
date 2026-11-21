@@ -1,0 +1,22 @@
+{
+ "run_id": "20261121_055329_neoqa_qwen3-emb-0.6b-mp_dev",
+ "dataset": "neoqa",
+ "split": "dev",
+ "method": {
+  "name": "qwen3-emb-0.6b-mp",
+  "type": "dense",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "use_model_prompts": true,
+  "batch_size": 32
+ },
+ "method_hash": "5fa7336176",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 1800,
+ "corpus_sha256": "7545e5e5d7106614510587898011720cbc93a99296a97b45645d5854d8e2c2a4",
+ "queries_sha256": "59d3ce5c0270411cff9d278d1123fcc48e95bc2bb7fe0a413a3200cc2b79f122",
+ "index_key": "neoqa__Qwen-Qwen3-Embedding-0.6B__e7d41bf57be9",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

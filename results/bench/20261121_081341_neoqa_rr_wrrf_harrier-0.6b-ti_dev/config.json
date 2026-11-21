@@ -1,0 +1,47 @@
+{
+ "run_id": "20261121_081341_neoqa_rr_wrrf_harrier-0.6b-ti_dev",
+ "dataset": "neoqa",
+ "split": "dev",
+ "method": {
+  "name": "rr_wrrf_harrier-0.6b-ti",
+  "type": "rerank",
+  "first": {
+   "name": "wrrf_harrier-0.6b-ti_bm25",
+   "type": "fusion",
+   "mode": "rrf",
+   "rrf_k": 60,
+   "weights": [
+    1.0,
+    0.5
+   ],
+   "components": [
+    {
+     "name": "harrier-0.6b-ti",
+     "type": "dense",
+     "model": "microsoft/harrier-oss-v1-0.6b",
+     "use_model_prompts": true,
+     "batch_size": 32,
+     "task_instruct": true
+    },
+    {
+     "name": "bm25",
+     "type": "bm25"
+    }
+   ]
+  },
+  "model": "BAAI/bge-reranker-v2-m3",
+  "depth": 100,
+  "batch_size": 64,
+  "max_length": 512
+ },
+ "method_hash": "3b6e79c4c2",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 1800,
+ "corpus_sha256": "7545e5e5d7106614510587898011720cbc93a99296a97b45645d5854d8e2c2a4",
+ "queries_sha256": "59d3ce5c0270411cff9d278d1123fcc48e95bc2bb7fe0a413a3200cc2b79f122",
+ "index_key": "neoqa__microsoft-harrier-oss-v1-0.6b__778dfee54faa+neoqa__bm25+rerank:BAAI/bge-reranker-v2-m3@100",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

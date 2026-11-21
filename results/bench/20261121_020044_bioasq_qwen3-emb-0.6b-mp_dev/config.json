@@ -1,0 +1,22 @@
+{
+ "run_id": "20261121_020044_bioasq_qwen3-emb-0.6b-mp_dev",
+ "dataset": "bioasq",
+ "split": "dev",
+ "method": {
+  "name": "qwen3-emb-0.6b-mp",
+  "type": "dense",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "use_model_prompts": true,
+  "batch_size": 32
+ },
+ "method_hash": "5fa7336176",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 27974,
+ "corpus_sha256": "ae48a28955cac5dedc24969a74d454e5b648fb6ff7a05b193da7933d5de55f93",
+ "queries_sha256": "891b82bf15c4831e8d620f94d340cb5ee44ab9b190e32a3536e0472d74d2e3cf",
+ "index_key": "bioasq__Qwen-Qwen3-Embedding-0.6B__14248302d9b4",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 100 questions at batch=1, top_k=100"
+}

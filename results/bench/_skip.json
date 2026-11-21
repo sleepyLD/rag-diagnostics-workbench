@@ -1,0 +1,25 @@
+{
+ "chain0-bgev2m3_wrrf": [
+  "multihop_rag",
+  "multihop_rag_c256",
+  "neoqa",
+  "squad",
+  "scifact"
+ ],
+ "casc-q3rr0.6B@50": [
+  "neoqa",
+  "multihop_rag_c256m",
+  "scifact",
+  "hotpotqa"
+ ],
+ "casc-q3rr0.6B@30": [
+  "scifact",
+  "hotpotqa"
+ ],
+ "casc-q3rr4B@50": [
+  "multihop_rag_c256m"
+ ],
+ "iterretgen-q3-4b": [
+  "bioasq"
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "run_id": "20261118_210546_finder_mhbeam3_base-mh2_dev",
+ "dataset": "finder",
+ "split": "dev",
+ "method": {
+  "name": "mhbeam3_base-mh2",
+  "type": "mhbeam",
+  "base": {
+   "name": "bge-base-mh2",
+   "type": "dense",
+   "model": "models/bge-base-mh2",
+   "query_prefix": "Represent this sentence for searching relevant passages: "
+  },
+  "hops": 3,
+  "beam": 5,
+  "per_beam": 10,
+  "ctx_chars": 400
+ },
+ "method_hash": "b6e2101e87",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 5832,
+ "corpus_sha256": "8acb73aa2e631dbd069de340f00909d580243fea3bc03309457775746cb35468",
+ "queries_sha256": "9e980ef329695e2c6a9f03a543cd2039adc9b4a89a87d26bf5f36831d5660a4a",
+ "index_key": "finder__models-bge-base-mh2__f2d9e4e909f3+mhbeam(h3,b5,p10,c400)",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 200 questions at batch=1, top_k=100"
+}

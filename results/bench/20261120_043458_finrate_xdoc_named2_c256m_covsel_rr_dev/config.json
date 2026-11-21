@@ -1,0 +1,53 @@
+{
+ "run_id": "20261120_043458_finrate_xdoc_named2_c256m_covsel_rr_dev",
+ "dataset": "finrate_xdoc_named2_c256m",
+ "split": "dev",
+ "method": {
+  "name": "covsel_rr",
+  "type": "covsel",
+  "base": {
+   "name": "rr-bgev2m3_wrrf",
+   "type": "rerank",
+   "first": {
+    "name": "wrrf_large_bm25",
+    "type": "fusion",
+    "mode": "rrf",
+    "rrf_k": 60,
+    "weights": [
+     1.0,
+     0.5
+    ],
+    "components": [
+     {
+      "name": "bge-large",
+      "type": "dense",
+      "model": "BAAI/bge-large-en-v1.5",
+      "query_prefix": "Represent this sentence for searching relevant passages: "
+     },
+     {
+      "name": "bm25",
+      "type": "bm25"
+     }
+    ]
+   },
+   "model": "BAAI/bge-reranker-v2-m3",
+   "depth": 100,
+   "batch_size": 64,
+   "max_length": 512
+  },
+  "llm": "qwen3:4b-instruct",
+  "pool": 30,
+  "select": 10,
+  "lam": 0.3
+ },
+ "method_hash": "1c852dd93e",
+ "top_k": 100,
+ "n_queries": 500,
+ "n_corpus": 216480,
+ "corpus_sha256": "738fed64a336f975d8a863d6abe9a404568ded4d303b7ef869e3e0716a3a1f02",
+ "queries_sha256": "50a0c88acfae2a0036cb9569133174689a41382f73d1f5d154412e4671fcd688",
+ "index_key": "finrate_xdoc_named2_c256m__BAAI-bge-large-en-v1.5__d61e671eef04+finrate_xdoc_named2_c256m__bm25+rerank:BAAI/bge-reranker-v2-m3@100+covsel:qwen3:4b-instruct(p30,s10,l0.3)",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 30 questions at batch=1, top_k=100"
+}

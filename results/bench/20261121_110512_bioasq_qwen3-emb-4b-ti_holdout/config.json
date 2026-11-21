@@ -1,0 +1,23 @@
+{
+ "run_id": "20261121_110512_bioasq_qwen3-emb-4b-ti_holdout",
+ "dataset": "bioasq",
+ "split": "holdout",
+ "method": {
+  "name": "qwen3-emb-4b-ti",
+  "type": "dense",
+  "model": "Qwen/Qwen3-Embedding-4B",
+  "use_model_prompts": true,
+  "batch_size": 8,
+  "task_instruct": true
+ },
+ "method_hash": "26cb5b912c",
+ "top_k": 100,
+ "n_queries": 300,
+ "n_corpus": 27974,
+ "corpus_sha256": "ae48a28955cac5dedc24969a74d454e5b648fb6ff7a05b193da7933d5de55f93",
+ "queries_sha256": "6a59f94dc91c110f8f3dfcef91397ab75c52bf903d4110cd2b6ef75b80be87eb",
+ "index_key": "bioasq__Qwen-Qwen3-Embedding-4B__634f2e329833",
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "latency_protocol": "warmup 20, then first 50 questions at batch=1, top_k=100"
+}

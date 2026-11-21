@@ -16,3 +16,38 @@ docs/
 # NeoQA：CC BY-ND 4.0，作者要求不要公開解密後的明文 → 只提交下載腳本
 data/raw/neoqa/
 .venv-neoqa/
+
+# 自動化 retriever 研究（auto/ runner）：環境與執行期檔案不提交
+.venv-auto/
+auto/queue/
+auto/running/
+auto/done/
+auto/logs/
+auto/heartbeat.json
+auto/hf_cache/
+
+# bench：可重建的大型資料（NeoQA 明文依授權不可提交）
+bench/data/
+bench/train/
+models/
+auto/progress/
+auto/parked/
+auto/jobs/
+auto/STOP
+auto/recovery_log.jsonl
+auto/env.json
+auto/*_probe.json
+auto/*.hold
+auto/*.moved
+
+# 檢索評估結果：只提交設定與指標（config.json、metrics.json、_index.jsonl，約 7 MB）；
+# 逐題檢索結果與生成答案約 1.2 GB，可用 run_matrix 重跑
+results/bench/_partial/
+results/bench/_cache/
+results/bench/**/retrieval.jsonl
+results/bench/**/qa_*.jsonl
+# LLM 檢索過程的紀錄含題目原文（NeoQA 依授權不可公開明文）
+results/bench/**/trace.jsonl
+
+# 研究過程的工作筆記（結果與結論都寫在 README）
+reports/retriever_study.md
